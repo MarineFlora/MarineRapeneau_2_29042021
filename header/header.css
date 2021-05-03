@@ -14,3 +14,41 @@
 body {
     font-family: "Raleway", sans-serif;
 }
+
+header {
+    display: flex; /* align en colonne head et nav*/
+    flex-direction: column;
+}
+
+#head {
+    display: flex; /* aligne les éléments logo et h3*/
+    justify-content: space-between; /* éléments étirés dans le bloc*/   
+    align-items: center; /* centre les élements */
+    color:  #0065fc; /* couleur du texte */
+    margin: 20px; /* marge sur coté */
+}
+
+nav ul {
+    display: flex; /* aligne la liste du nav */
+    justify-content: space-around; /* ne fonctionne pas, espace à gauche de herbegement en plus.... ??? */
+}
+
+ul li a { 
+    text-decoration: none; /*enlève surlignage liens*/
+}
+
+nav li { 
+    list-style: none;  /*enlève points liste*/
+    /*padding: 15px 50px 15px 50px; /* !!! Quand je rajoute padding les blocs sortent du bloc rouge nav + problème avec espace gauche de hebergement... sinon serait ok */
+}
+
+.hebergement { 
+    border-bottom: solid 2px #0065fc; /* bordure bas*/
+    color: #0065fc; /*couleur du texte !!! ne fonctionne pas ?*/
+}
+
+.act { 
+    border-bottom: solid 2px #f2f2f2; /* bordure bas*/
+    color: black; /*couleur du texte*/
+}
+
