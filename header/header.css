@@ -1,4 +1,4 @@
- .border { 
+ /*.border { 
     border: 3px solid black;
     margin: 2px;
 } 
@@ -9,11 +9,19 @@
 
 .blue {
     border-color: blue;
-}
+}*/
 
 body {
     font-family: "Raleway", sans-serif;
+    min-width: 320px;
 }
+
+
+
+header{
+    color:#0065fc;
+}
+
 
 @media (max-width:600px) {
 
@@ -23,36 +31,46 @@ header {
     flex-direction: column;
 }
 
-#head {
+#top {
     display: flex; /* aligne les éléments logo et h3*/
     justify-content: space-between; /* éléments étirés dans le bloc*/   
-    align-items: center; /* centre les élements */
-    color:  #0065fc; /* couleur du texte */
+    align-items: center; /* centre les élements verticalement*/
     margin: 20px; /* marge sur coté */
 }
 
-nav ul {
-    display: flex; /* aligne la liste du nav */
-    justify-content: space-around; /* ne fonctionne pas, espace à gauche de herbegement en plus.... ??? */
+#top h3 {
+    font-weight: 700;
 }
 
+nav ul{
+    display: flex; /* aligne la liste du nav */
+    justify-content: space-around;  
+    padding: 0px; /* résout problème du padding de la liste par défaut*/
+} 
+
+
 ul li a { 
-    text-decoration: none; /*enlève surlignage liens*/
+    
+    text-decoration: none; /*enlève surlignage liens -- pas specifique au media query*/
+    padding: 15px 110px 15px 110px; /* problème est que quand on diminue fenetre, les ancres ne sont plus centrées/space-around */
+    font-weight: 500;
+    
 }
 
 nav li { 
-    list-style: none;  /*enlève points liste*/
-    /*padding: 15px 50px 15px 50px; /* !!! Quand je rajoute padding les blocs sortent du bloc rouge nav + problème avec espace gauche de hebergement... sinon serait ok */
+    list-style: none;  /*enlève points liste -- pas specifique au media query*/
+     /* !!! Quand je rajoute padding les blocs sortent du bloc rouge nav + problème avec espace gauche de hebergement... sinon serait ok */
+
 }
 
-.hebergement { 
-    border-bottom: solid 2px #0065fc; /* bordure bas*/
-    color: #0065fc; /*couleur du texte !!! ne fonctionne pas ?*/
+.hebergement a { 
+    border-bottom: solid 3px #0065fc; /* bordure bas-- change avec media query desktop*/
 }
 
-.act { 
-    border-bottom: solid 2px #f2f2f2; /* bordure bas*/
-    color: black; /*couleur du texte*/
+.act a { 
+    border-bottom: solid 3px #f2f2f2; /* bordure bas-- change avec media query*/
+    color :black; /*couleur de l'ancre*/
+   
 }
 
 }
