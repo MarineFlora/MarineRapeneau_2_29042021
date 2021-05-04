@@ -1,4 +1,4 @@
- /*.border { 
+ .border { 
     border: 3px solid black;
     margin: 2px;
 } 
@@ -9,13 +9,13 @@
 
 .blue {
     border-color: blue;
-}*/
+}
 
 body {
     font-family: "Raleway", sans-serif;
-    min-width: 320px;
+    margin: 0;
+    min-width:320px;
 }
-
 
 
 header{
@@ -35,42 +35,42 @@ header {
     display: flex; /* aligne les éléments logo et h3*/
     justify-content: space-between; /* éléments étirés dans le bloc*/   
     align-items: center; /* centre les élements verticalement*/
-    margin: 20px; /* marge sur coté */
+    padding: 10px; /* marge sur coté */
 }
 
 #top h3 {
     font-weight: 700;
 }
 
-nav ul{
+
+
+nav ul {
     display: flex; /* aligne la liste du nav */
-    justify-content: space-around;  
-    padding: 0px; /* résout problème du padding de la liste par défaut*/
-} 
-
-
-ul li a { 
-    
-    text-decoration: none; /*enlève surlignage liens -- pas specifique au media query*/
-    padding: 15px 110px 15px 110px; /* problème est que quand on diminue fenetre, les ancres ne sont plus centrées/space-around */
-    font-weight: 500;
-    
+    justify-content: space-around; 
+    padding: 0; /* résout problème du padding de la liste par défaut*/    
+    height: 40px;/* taille parent*/
 }
 
 nav li { 
-    list-style: none;  /*enlève points liste -- pas specifique au media query*/
-     /* !!! Quand je rajoute padding les blocs sortent du bloc rouge nav + problème avec espace gauche de hebergement... sinon serait ok */
+    list-style: none;  /*enlève points liste -- pas specifique au media query*/ 
+}
+
+
+nav a { 
+    text-decoration: none; /*enlève surlignage liens -- pas specifique au media query*/
+    padding-bottom: 15px; /* problème est que padding left et right de ul et li ne fait pas 100% de la page */
+    /*padding-left: 85px;  permet d'avoir des padding qui ressemble mais avec diminution fenetre ça ne tient pas
+    padding-right: 85px;*/
+    font-weight: 500;
+    border-bottom: solid 3px #f2f2f2;
+    color: black;  
 
 }
 
-.hebergement a { 
-    border-bottom: solid 3px #0065fc; /* bordure bas-- change avec media query desktop*/
-}
 
-.act a { 
-    border-bottom: solid 3px #f2f2f2; /* bordure bas-- change avec media query*/
-    color :black; /*couleur de l'ancre*/
-   
+a:hover, a:focus { /*change apparence quand survol et quand on a cliqué*/
+    border-bottom: solid 3px #0065fc;
+    color: blue;
 }
 
 }
