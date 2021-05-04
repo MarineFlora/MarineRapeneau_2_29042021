@@ -33,7 +33,7 @@ nav ul {
     justify-content: space-around; 
     align-items: center;
     padding: 0; /* résout problème du padding de la liste par défaut*/    
-    height: 40px;/* taille parent pour que le reste marche...*/
+    height: 60px;/* taille parent pour que le reste marche...*/
 }
 
 nav li { 
@@ -51,43 +51,46 @@ a:hover, a:focus { /*change apparence quand survol et quand on a cliqué*/
     color: blue;
 }
 
-@media all and (max-width:599px) {
+@media all and (max-width:600px) { /*mobile */
 
     header {
-        display: flex; /* align en colonne head et nav*/
-        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        flex-wrap: wrap;
     }
 
-    #top {
-        display: flex; /* aligne les éléments logo et h3*/
-        justify-content: space-between; /* éléments étirés dans le bloc*/   
-        align-items: center; /* centre les élements verticalement*/
-        padding: 10px; /* marge sur coté */
-    }
-
+        header > nav {
+            order : 3;
+        }
+   
 
     nav a {
-        padding-bottom: 15px;
+        padding: 0 70px 15px 70px;
+        
         border-bottom: solid 3px #f2f2f2;
     }
+
+   
 }
 
-@media all and (min-width:600px)
+@media all and (min-width:600px) /*tablette et desktop*/
 {
     header {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        
+        align-items: center; 
     }
 
+    header > #subs {
+        order: 3;
+    }
 
-
-    #top {
+   /* #top {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        }
+        } */
 
     #logo {
         padding: 20px;
