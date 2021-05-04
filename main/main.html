@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <script src="https://kit.fontawesome.com/5f5fe7de0e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css"/>
 </head>
 
@@ -19,33 +19,36 @@
                 <p class="border orange">En plein centre ville ou en pleine nature</p>
              </div>
 
-            <div class="border blue">
+            <div id="champ" class="border blue">
                 <i class="fas fa-map-marker-alt border orange"></i> 
-                <p><input class="border orange"/></p>
+                <p><input type="text" id="location" value="Marseille, France" class="border orange"/>
                 <i class="fas fa-search border orange"></i>
             </div>
 
-            <div class="border blue"> 
+            <div id="filters" class="border blue"> 
                 <h2 class="border orange">Filtres</h2>
-                <div class="border orange">
-                    <i class="fas fa-money-bill-wave border purple"></i> 
-                    <button class="border purple">Economique</button>
-                </div>
-                <div class="border orange">
-                    <i class="fas fa-child border purple"></i> 
-                    <button class="border purple">Famillial</button> 
-                </div>
-                <div class="border orange">
-                    <i class="fas fa-heart border purple"></i> 
-                    <button class="border purple">Romantique</button> 
-                </div>
-                <div class="border orange">
-                    <i class="fas fa-dog border purple"></i> 
-                    <button class="border purple">Animaux autorisés</button> 
+                
+                <div id="buttons">
+                    <div class="border orange">
+                        <i class="fas fa-money-bill-wave border purple"></i> 
+                        <button class="border purple">Economique</button>
+                    </div>
+                    <div class="border orange">
+                        <i class="fas fa-child border purple"></i> 
+                        <button class="border purple">Famillial</button> 
+                    </div>
+                    <div class="border orange">
+                        <i class="fas fa-heart border purple"></i> 
+                        <button class="border purple">Romantique</button> 
+                    </div>
+                    <div class="border orange">
+                        <i class="fas fa-dog border purple"></i> 
+                        <button class="border purple">Animaux autorisés</button> 
+                    </div>
                 </div>
             </div>
 
-            <div class="border blue">
+            <div id="info" class="border blue">
                 <i class="fas fa-info border orange"></i> 
                 <p class="border orange">Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
