@@ -1,0 +1,98 @@
+/*.border { 
+    border: 3px solid black;
+    margin: 2px;
+} 
+
+.red {
+    border-color: red;
+}
+
+.blue {
+    border-color: blue;
+}
+
+.orange {
+    border-color: orange;
+}
+
+.purple {
+    border-color: purple;
+} */
+
+body{
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    padding: 0px 40px 0 40px;;
+}
+
+
+
+#search h1 {
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+#search p {
+    font-weight: 500;
+}
+
+.fa-search { /* comment le coller au champ input ????*/
+    background-color: #0065fc;
+    color: white;
+    padding: 15px 15px 15px 15px;
+    border-radius: 15px;
+}
+
+.fa-map-marker-alt {
+    background-color: #f2f2f2;
+    padding: 20px 15px 15px 20px; /*problème alignement de l'icone, pas au centre mais sinon pas aligné avec input*/
+    border-radius: 15px 0 0 15px;
+}
+
+#champ {
+    display: flex;
+    align-items: center; 
+   /* margin: 0 20px 0 20px;*/
+}
+
+#champ input {
+   font-weight: 700;
+   font-size: 1em;
+    padding: 15px 15px 15px 15px;
+    border: solid #f2f2f2 thin;
+    
+}
+
+#champ i {
+    margin:0;
+}
+
+#filters h2 {
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+#filters button {
+    font-weight:700; 
+}
+
+#filters i {
+    color: #0065fc;
+}
+
+#buttons{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#info i {
+    color:#0065fc;
+}
+
+
+@media (max-width:600px){
+
+
+    
+}
