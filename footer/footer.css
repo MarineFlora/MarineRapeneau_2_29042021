@@ -1,0 +1,24 @@
+.border { 
+    border: 3px solid black;
+    margin: 2px;
+} 
+
+.red {
+    border-color: red;
+}
+
+.blue {
+    border-color: blue;
+}
+
+.orange {
+    border-color: orange;
+}
+
+.purple {
+    border-color: purple;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+}
