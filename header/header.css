@@ -1,0 +1,103 @@
+ .border { 
+    border: 3px solid black;
+    margin: 2px;
+} 
+
+.red {
+    border-color: red;
+}
+
+.blue {
+    border-color: blue;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    min-width:320px;
+}
+
+
+header{
+    color:#0065fc;
+}
+
+
+#top h3 {
+    font-weight: 700;
+}
+
+
+nav ul {
+    display: flex; /* aligne la liste du nav */
+    justify-content: space-around; 
+    align-items: center;
+    padding: 0; /* résout problème du padding de la liste par défaut*/    
+    height: 60px;/* taille parent pour que le reste marche...*/
+}
+
+nav li { 
+    list-style: none;  /*enlève points liste -- pas specifique au media query*/ 
+}
+
+nav a { 
+    text-decoration: none; /*enlève surlignage liens -- pas specifique au media query*/
+    font-weight: 500;
+    color: black;  
+}
+
+a:hover, a:focus { /*change apparence quand survol et quand on a cliqué*/
+    border-bottom: solid 3px #0065fc;
+    color: blue;
+}
+
+@media all and (max-width:600px) { /*mobile */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        flex-wrap: wrap;
+    }
+
+        header > nav {
+            order : 3;
+        }
+   
+
+    nav a {
+        padding: 0 70px 15px 70px;
+        
+        border-bottom: solid 3px #f2f2f2;
+    }
+
+   
+}
+
+@media all and (min-width:600px) /*tablette et desktop*/
+{
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+    }
+
+    header > #subs {
+        order: 3;
+    }
+
+   /* #top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        } */
+
+    #logo {
+        padding: 20px;
+    }
+
+    nav a {
+       padding-left: 30px;
+        border-top: solid 3px #f2f2f2;
+    }
+}
