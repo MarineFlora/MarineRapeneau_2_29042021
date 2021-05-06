@@ -1,4 +1,4 @@
- .border { 
+ /*.border { 
     border: 3px solid black;
     margin: 2px;
 } 
@@ -9,7 +9,7 @@
 
 .blue {
     border-color: blue;
-} 
+} */
 
 body {
     font-family: "Raleway", sans-serif;
@@ -17,116 +17,102 @@ body {
     min-width:320px;
 }
 
-
-header{
+#signUp {
     color:#0065fc;
 }
 
-
-#top h3 {
-    font-weight: 700;
+.navigation {
+    font-weight: 600;
+    font-size: 0.9em;
 }
 
-
-nav ul { /*si je chqnge pour .navigation ce n'et plus flex row.... */
+.navigation ul { 
     display: flex; /* aligne la liste du nav */
     justify-content: space-around; 
     align-items: center;
     padding: 0; /* résout problème du padding de la liste par défaut*/    
-    
 }
 
-nav li { 
-    list-style: none;  /*enlève points liste -- pas specifique au media query*/ 
-    /*margin: 20px;*/
+.navigation li { 
+    list-style: none;  /*enlève points liste */ 
 }
 
 .navigation a { 
-    text-decoration: none; /*enlève surlignage liens -- pas specifique au media query*/
-    font-weight: 500;
+    text-decoration: none; /*enlève surlignage liens*/
     color: black;  
 }
 
-.navigation a:hover { /*change apparence quand survol et quand on a cliqué pas : focus ??*/
-    border-bottom: solid 3px #0065fc;
-    color: #0065fc;
-}
 
-
-@media all and (max-width:992px) { /*mobile et tablette car pas ergonomique sinon*/
+@media all and (max-width:600px) { /*mobile et tablette , si je met max-device-width pour cibler mobile ça décale élement signup n'est plus à droite mais en dessous de l'image*/
 
     header {
         display: flex;
         justify-content: space-between;
-        align-items: center; 
-        flex-wrap: wrap; /* si pas mis s'incrire sur meme ligne que nav*/
-    }
+        align-items:flex-end; /*aligner sur base , pas au centre*/
+        }
 
-        header > .navigation { /*le nav se situe en position 3 ? utile? si j'enlève ça casse les tailles de blocs*/
-            order : 3;
+    #logo {
+            position: absolute;
+           top:5px;   
         }
 
     .navigation {
         width: 100%;/* pour que contenu de nav prennet 50%*/
-        /*flex: 1;*/
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 
-    /*.navigation li {
-        flex: 1; /*les li prennent bien 50% du nav mais juste en largeur ???*/
-      /*  border-bottom: solid 3px #f2f2f2;*/
-       /* padding-bottom: 15px; */
-    
-   
+    #signUp {
+        text-align: end;
+    }
 
     .navigation a {
         flex: 0.5; /* le a fait bien 0.5 en largeur et hauteur sans besoin de mettre un height à nav*/
-        padding-bottom: 10px; /*si j'enlève le padding les boite li et a font la même hauteur tout ok*/  
+        padding-bottom: 10px;   
         border-bottom: solid 3px #f2f2f2; 
         text-align: center;
-        
     } 
   
+    .navigation a:hover { /*change apparence au survol*/
+        border-bottom: solid 3px #0065fc;
+        color: #0065fc;
+    }
+
 }
 
-@media all and (min-width:992px) /* desktop*/
+@media all and (min-width:600px) /* desktop*/
 {
     header {
         display: flex;
         justify-content: space-between;
-        align-items: center; 
-    
+        align-items: flex-end; 
     }
 
-    header > #signUp {  /*flex blox changer l'ordre des élements "sinscrire doit se situer à la fin donc order3*/
+    .navigation > #signUp {  /*flex box change l'ordre des élements "sinscrire doit se situer à la fin donc order3*/
         order: 3;
     }
 
+    .navigation {
+        display: flex;
+        align-items: baseline;
+    }
 
-    /*.navigation {
-        width: 100%;/* pour que contenu de nav prennet 50%*/
-        /*flex: 1;
-    }*/
     .navigation a {
-        flex: 0.5; /* le a fait bien 0.5 en largeur et hauteur sans besoin de mettre un height à nav*/
-        padding: 15px 10px 0 10px; /*si j'enlève le padding les boite li et a font la même hauteur tout ok*/  
-        border-top: solid 3px #f2f2f2; 
-        text-align: center;
-        
+        flex: 0.5; /* pour que ancre tiennent 50% de la place du nav*/
+        padding: 25px 15px 0 15px; /*si j'enlève le padding les boite li et a font la même hauteur tout ok*/  
+        border-top: solid 3px white; 
+        text-align: center;  
     } 
 
+    .navigation a:hover { /*change apparence au survol*/
+        border-top: solid 3px #0065fc;
+        color: #0065fc;
+    }
+    
+    #signUp {
+        padding: 25px 15px 0 15px;
+    }
 
-   /* #top {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        } */
-
-    /*#logo {
-        padding: 20px;
-    }*/
-
-    /*nav a {
-       padding-left: 30px;
-        border-top: solid 3px #f2f2f2;
-    }*/
 }
