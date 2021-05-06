@@ -90,6 +90,13 @@ body{
     color:#0065fc;
 }
 
+main img {
+    width: 100%; /* test pour que ça ne gene pas le responsive, à changer*/
+  height: 100px; /*exemple à changer*/
+}
+.cover { /* à modifier plus tard*/
+    object-fit: none;
+}
 
 @media (max-width:600px){
 
