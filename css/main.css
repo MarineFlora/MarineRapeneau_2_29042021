@@ -1,4 +1,4 @@
-/*.border { 
+.border { 
     border: 3px solid black;
     margin: 2px;
 } 
@@ -17,7 +17,7 @@
 
 .purple {
     border-color: purple;
-} */
+} 
 
 body{
     margin: 0;
@@ -25,16 +25,22 @@ body{
     padding: 0px 40px 0 40px;;
 }
 
+#search div {
+    margin: 0 0 15px 0;
+}
 
-
-#search h1 {
+#subheading h1 {
     font-weight: 800;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    margin: 10px 0 10px 0;
 }
 
 #search p {
     font-weight: 500;
+    font-size: 0.9em;
 }
+
+/* -----------------  champ de recherche --------------------- */
 
 .fa-search { /* comment le coller au champ input ????*/
     background-color: #0065fc;
@@ -56,8 +62,9 @@ body{
 }
 
 #champ input {
-   font-weight: 700;
-   font-size: 1em;
+    font-weight: 800;
+    font-size: 1em;
+    font-family: "Raleway", sans-serif;
     padding: 15px 15px 15px 15px;
     border: solid #f2f2f2 thin;
     
@@ -67,6 +74,7 @@ body{
     margin:0;
 }
 
+/* ------------------------------- */
 #filters h2 {
     font-size: 1.1em;
     font-weight: 700;
