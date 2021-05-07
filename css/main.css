@@ -25,9 +25,9 @@ body{
     padding: 0px 30px 0 30px;
 }
 
-#search div {
-    margin: 0 0 15px 0;
-}
+/*#search div {
+    margin: 0 0 10px 0;
+}*/
 
 #subheading h1 {
     font-weight: 800;
@@ -50,10 +50,20 @@ body{
 #champ button {
     background-color: #0065fc;
     padding: 18px;
-    border-radius: 15px;
     border: none;
     position: relative;
     top: 0px; left: -15px;
+    color: white;
+}
+
+#button_1 {
+    border-radius: 15px;
+}
+
+#button_2 {
+    border-radius: 0 15px 15px 0;
+     font-weight: 600;
+
 }
 
 .fa-search { 
@@ -78,30 +88,60 @@ body{
 }
 
 
-/* ------------------------------- */
+/* -------------- Filters ----------------- */
+
 #filters h2 {
     font-size: 1.1em;
     font-weight: 700;
+    padding-right: 15px;
 }
 
-#filters button {
-    font-weight:700; 
-}
-
-#filters i {
-    color: #0065fc;
-}
-
-#buttons{
+#buttons_all {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
 
-#info i {
-    color:#0065fc;
+#buttons_all button {
+    font-family: "Raleway", sans-serif;
+    font-weight: 900; 
+    background-color: white;
+    border: solid 2px #d9d9d9;
+    border-radius: 30px;
+    padding-right: 15px;
 }
 
+#filters i { /* pb: le bg des icones n'est pas tjrs rond car en fonction de la forme incone + pas exactement même taille que le button */
+    color: #0065fc;
+    background-color: #deebff ;
+    padding: 15px;
+    border-radius: 30px;
+    position: relative;
+    top:0; left: -8px;
+}
+
+#filters button:hover {
+    background-color: #0065fc;
+    color: white;
+}
+
+/* -------------- info -----------*/
+
+#info i { /* pb: l'icone i n'est pas centrée dans le cercle */
+    color:#0065fc;
+    border:solid 1px #d9d9d9;
+    padding: 5px;
+    font-size: 0.7em;
+    border-radius: 50%;
+    margin-right: 10px;
+    width:10px;
+    height: 10px;
+    text-align: center;
+}
+
+
+
+/*  images sections main  */
 main img {
     width: 100%; /* test pour que ça ne gene pas le responsive, à changer*/
   height: 100px; /*exemple à changer*/
@@ -112,6 +152,37 @@ main img {
 
 @media (max-width:600px){
 
+    #button_2 {
+        display: none;
+    }
 
+    #buttons_all button {
+        margin: 5px;
+    }
     
+    #info {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+@media (min-width: 601px) {
+    #button_1 {
+        display: none;
+    }
+
+    #buttons_all button {
+        margin: 5px;
+    }
+    
+    #filters {
+        display: flex;
+        align-items:baseline;
+        margin: 20px 0 20px 0;
+    }
+
+    #info {
+        display: flex;
+        align-items: center;
+    }
 }
