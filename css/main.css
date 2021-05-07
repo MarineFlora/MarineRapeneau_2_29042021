@@ -1,4 +1,4 @@
-.border { 
+/*.border { 
     border: 3px solid black;
     margin: 2px;
 } 
@@ -17,12 +17,12 @@
 
 .purple {
     border-color: purple;
-} 
+} */
 
 body{
     margin: 0;
     font-family: "Raleway", sans-serif;
-    padding: 0px 40px 0 40px;;
+    padding: 0px 30px 0 30px;
 }
 
 #search div {
@@ -31,7 +31,7 @@ body{
 
 #subheading h1 {
     font-weight: 800;
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin: 10px 0 10px 0;
 }
 
@@ -42,37 +42,41 @@ body{
 
 /* -----------------  champ de recherche --------------------- */
 
-.fa-search { /* comment le coller au champ input ????*/
+#champ {
+    display: flex;
+    align-items: center; 
+}
+
+#champ button {
     background-color: #0065fc;
-    color: white;
-    padding: 15px 15px 15px 15px;
+    padding: 18px;
     border-radius: 15px;
+    border: none;
+    position: relative;
+    top: 0px; left: -15px;
+}
+
+.fa-search { 
+    color: white;
+    font-size: 1.2em;
 }
 
 .fa-map-marker-alt {
     background-color: #f2f2f2;
-    padding: 20px 15px 15px 20px; /*problème alignement de l'icone, pas au centre mais sinon pas aligné avec input*/
+    padding: 18px; 
     border-radius: 15px 0 0 15px;
-}
-
-#champ {
-    display: flex;
-    align-items: center; 
-   /* margin: 0 20px 0 20px;*/
 }
 
 #champ input {
     font-weight: 800;
-    font-size: 1em;
+    font-size: 1.2em;
     font-family: "Raleway", sans-serif;
-    padding: 15px 15px 15px 15px;
+    padding: 15px 0 15px 15px;
     border: solid #f2f2f2 thin;
-    
+    margin: 0;  
+    width: 220px;
 }
 
-#champ i {
-    margin:0;
-}
 
 /* ------------------------------- */
 #filters h2 {
