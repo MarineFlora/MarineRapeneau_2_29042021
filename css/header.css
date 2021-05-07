@@ -44,7 +44,7 @@ body {
 }
 
 
-@media all and (max-width:600px) { /*mobile et tablette , si je met max-device-width pour cibler mobile ça décale élement signup n'est plus à droite mais en dessous de l'image*/
+@media all and (max-width:600px) { /*mobile */
 
     header {
         display: flex;
@@ -86,7 +86,7 @@ body {
 
 }
 
-@media all and (min-width:600px) /* desktop*/
+@media all and (min-width:601px) /* tablette et desktop*/
 {
     header {
         display: flex;
