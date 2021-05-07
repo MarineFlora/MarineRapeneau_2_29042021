@@ -1,4 +1,4 @@
-/*.border { 
+.border { 
     border: 3px solid black;
     margin: 2px;
 } 
@@ -17,7 +17,7 @@
 
 .purple {
     border-color: purple;
-} */
+} 
 
 body{
     margin: 0;
@@ -78,18 +78,11 @@ body{
 }
 
 
-/* ------------------------------- */
+/* -------------- Filters ----------------- */
+
 #filters h2 {
     font-size: 1.1em;
     font-weight: 700;
-}
-
-#filters button {
-    font-weight:700; 
-}
-
-#filters i {
-    color: #0065fc;
 }
 
 #buttons{
@@ -98,10 +91,55 @@ body{
     flex-wrap: wrap;
 }
 
-#info i {
-    color:#0065fc;
+#filters button {
+    font-family: "Raleway", sans-serif;
+    font-weight: 900; 
+    padding: 15px 15px 15px 50px;
+    background-color: white;
+    border: solid 2px #d9d9d9;
+    border-radius: 30px;
 }
 
+#filters i { /* pb: les icones ne sont pas centré dans leur BG bleu clair */
+    color: #0065fc;
+    background-color: #deebff ;
+    padding: 15px;
+    border-radius: 30px;
+    position: relative;
+    top:0; left: 45px;
+    height: 20px;
+    width: 20px;
+}
+
+.button_filter { /*pb= les div ont une margin left... */
+    display: flex;
+   /* justify-content: space-between;*/
+}
+
+#filters button:hover {
+    background-color: #0065fc;
+    color: white;
+}
+
+#info i {
+    color:#0065fc;
+    border:solid 1px #d9d9d9;
+    font-size: 0.7em;
+    border-radius: 30px;
+    padding: 10px;
+    height: 5px;
+    width: 5px;
+    margin-right: 10px;
+}
+
+#info {
+    display: flex;
+    align-items: center;
+}
+
+
+
+/*  images sections main  */
 main img {
     width: 100%; /* test pour que ça ne gene pas le responsive, à changer*/
   height: 100px; /*exemple à changer*/
