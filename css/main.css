@@ -36,6 +36,11 @@ body{
     font-size: 0.9em;
 }
 
+a { 
+    text-decoration: none; /*enlève surlignage liens*/
+    color: black;  
+}
+
 /* -----------------  champ de recherche --------------------- */
 
 #search {
@@ -148,7 +153,7 @@ body{
 /* ----------------- CARDS LES PLUS POPULAIRES -------------- */
 
 #popular {
-    background-color:#f2f2f2; /*comment mettre le bg gris en 100% de la page en mobile...*/
+    background-color:#f2f2f2; 
     display: flex; /*est-ce utile? */
     flex-direction: column;
    
@@ -169,16 +174,24 @@ h1 {
 .fa-chart-line {
     font-weight: 800;
     font-size: 1.3em;
+    color: black;
 }
 
-.popular_text  {
-    margin: 0 20px 0 20px;
+#popular .hotel_details  {
+    margin: 0 20px 5px 20px;
 }
 
-#popular_cards .icons {
-    margin-top: 40px;
-    margin-bottom: 5px;
+.stars {
+    color: #0065fc;
     font-size: 0.7em;
+}
+
+#popular .stars {
+    margin-top: 40px;
+}
+
+.stars .last { /*  dernière(s) étoile(s)*/
+    color:#f2f2f2;
 }
 
 h3 {
@@ -195,7 +208,6 @@ h4 {
 #popular_cards .card {
     display: flex;
     flex-direction: row;
-    box-shadow: 0px 0px 10px #e4e4e4;
 }
 
 .card {
@@ -203,41 +215,67 @@ h4 {
     margin: 10px 20px 10px 20px;
     border-radius: 20px;
     padding: 5px;
-   
+    box-shadow: 0px 0px 10px #e4e4e4;
 }
 
 #popular_cards {
     margin-bottom: 20px;
 }
 
-#popular_cards a { 
-    text-decoration: none; /*enlève surlignage liens*/
-    color: black;  
-}
-
-#popular_cards i{
-    color: #0065fc;
-}
-#popular_cards .last { /*  dernière étoile*/
-    color:#f2f2f2;
-}
-
-#popular_cards img {
+#popular img {
     width: 40%; 
     height: 140px;/* no comprendo ce que je veux faire... je veux que l'img prennent 90% du contenant, j'ai le droit de mettre en px? car fonctionne comme ça, voir au responsive*/
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
 }
+
+/*----------------------------- hebergement Marseille -----------------*/
+
+#housing {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.1em;
+    font-weight: 800;
+}
+
+#housing h1, #housing h2 {
+    margin: 25px 20px 20px 20px;
+} 
+
+#housing img {
+    height: 115px; /* fonctionne mais en responsive après image trop large par rapport à taille...*/
+    object-fit: cover;
+    border-radius: 20px 20px 0 0px;
+}
+
+#housing .card {
+  margin: 10px 20px 10px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#housing .hotel_details  {
+    margin: 5px ;
+}
+
+#housing h4, #housing h3, #housing .stars { /*pas un peu logn pour faire ça??? */
+    margin: 5px;
+}
+
+
+
+
+
 
 
 /* images sections main  */
 
-.cover { /* à modifier plus tard*/
-    object-fit: cover;
-    border-radius: 20px 0 0 20px;
-} 
-
-#housing img, #activities img {
+ #activities img {
     width: 100%;
-    height: 100%;
+
 }
 
 
