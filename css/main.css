@@ -1,4 +1,4 @@
-/*.border { 
+.border { 
     border: 3px solid black;
     margin: 2px;
 } 
@@ -17,12 +17,13 @@
 
 .purple {
     border-color: purple;
-} */
+} 
 
 body{
     margin: 0;
     font-family: "Raleway", sans-serif;
     /*padding: 0px 30px 0 30px;*/
+   
 }
 
  h1 {
@@ -164,11 +165,7 @@ a {
     justify-content: space-between;
     align-items: center;
     color: black;
-    margin: 25px 20px 5px 20px;
-}
-
-h1 {
-    font-weight: 750;
+    padding: 25px 20px 5px 20px;
 }
 
 .fa-chart-line {
@@ -216,24 +213,25 @@ h4 {
     border-radius: 20px;
     padding: 5px;
     box-shadow: 0px 0px 10px #e4e4e4;
+   /* width: 335px; */
 }
 
 #popular_cards {
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 #popular img {
     width: 40%; 
     height: 140px;/* no comprendo ce que je veux faire... je veux que l'img prennent 90% du contenant, j'ai le droit de mettre en px? car fonctionne comme ça, voir au responsive*/
     object-fit: cover;
-    border-radius: 20px 0 0 20px;
+    border-radius: 15px 0 0 15px;
 }
 
 /*----------------------------- hebergement Marseille -----------------*/
 
-#housing {
-    margin-top: 40px;
-    margin-bottom: 30px;
+#housing h1 {
+    padding-top: 40px;
+    padding-bottom: 30px;
 }
 
 h2 {
@@ -241,14 +239,14 @@ h2 {
     font-weight: 800;
 }
 
-#housing h1, #housing h2 {
-    margin: 25px 20px 20px 20px;
+#housing h1, #housing h2, #activities h1 {
+    padding: 25px 20px 20px 20px;
 } 
 
 #housing img {
     height: 115px; /* fonctionne mais en responsive après image trop large par rapport à taille...*/
     object-fit: cover;
-    border-radius: 20px 20px 0 0px;
+    border-radius: 15px 15px 0 0px;
 }
 
 #housing .card {
@@ -267,10 +265,6 @@ h2 {
 
 
 
-
-
-
-
 /* images sections main  */
 
  #activities img {
@@ -279,7 +273,7 @@ h2 {
 }
 
 
-@media (max-width:600px){
+@media all and (max-width:600px){
 
     #button_2 {
         display: none;
@@ -295,7 +289,7 @@ h2 {
     }
 }
 
-@media (min-width: 601px) {
+@media all and (min-width: 601px) and (max-width: 991px) { /* tablette*/
     #button_1 {
         display: none;
     }
@@ -314,4 +308,52 @@ h2 {
         display: flex;
         align-items: center;
     }
+
+    #popular_cards, #housing_cards{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+}
+
+@media all and (min-width: 992px) {
+    #button_1 {
+        display: none;
+    }
+
+    #buttons_all button {
+        margin: 5px;
+    }
+    
+    #filters {
+        display: flex;
+        align-items:baseline;
+        margin: 20px 0 20px 0;
+    }
+
+    #info {
+        display: flex;
+        align-items: center;
+    }
+   
+   
+    #container_housing {
+        display: flex;   
+    }
+
+    #housing_cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #housing {
+        background-color: #f2f2f2;
+    }
+
+    #container_housing > #housing {
+        order: -1;
+    }
+
 }
