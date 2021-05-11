@@ -203,14 +203,14 @@ h4 {
 #popular_cards .card {
     display: flex;
     flex-direction: row;
+    padding: 5px;
 }
 
 .card {
     background-color: white;
     margin: 10px 0px 10px 0px;
     border-radius: 20px;
-    padding: 5px;
-    box-shadow: 0px 0px 10px #e4e4e4;
+    box-shadow: 0px 0px 10px 5px #e4e4e4;
    /* width: 335px; */
 }
 
@@ -218,7 +218,7 @@ h4 {
     padding-bottom: 20px;
 }
 
-#popular img {
+#popular img { /* -------------------------PROBLEME ICI -----------------------------------------------------*/
     width: 40%; 
     height: 140px;/* no comprendo ce que je veux faire... je veux que l'img prennent 90% du contenant, j'ai le droit de mettre en px? car fonctionne comme ça, voir au responsive*/
     object-fit: cover;
@@ -241,8 +241,8 @@ h2 {
     padding: 25px 20px 20px 20px;
 } 
 
-#housing img {
-    height: 115px; /* fonctionne mais en responsive après image trop large par rapport à taille...*/
+#housing img { 
+    height: 115px; /* fonctionne mais en responsive après image trop large par rapport à taille...*/ 
     object-fit: cover;
     border-radius: 15px 15px 0 0px;
 }
@@ -251,6 +251,8 @@ h2 {
   margin: 10px 0px 10px 0px;
   display: flex;
   flex-direction: column;
+  padding: 5px;
+  /* TAILLE % a mettre ici???? */
 }
 
 #housing .hotel_details  {
@@ -262,14 +264,23 @@ h2 {
 }
 
 
+/* --------- ACT -------*/
 
-/* images sections main  */
-
- #activities img {
-    width: 100%;
-
+#activities_cards .card {
+    height: 190px;
+    margin-bottom: 30px;
 }
 
+#activities img {
+    border-radius: 15px 15px 0 0px;
+    height: 135px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#activities h3 {
+    padding: 5px 0 15px 15px;
+}
 
 @media all and (max-width:600px){ /* mobile */
 
@@ -293,7 +304,12 @@ h2 {
         align-items: baseline;
     }
 
-   
+     #activities {
+        height: 1380px; 
+    }
+
+
+
 }
 
 @media all and (min-width: 601px) and (max-width: 991px) { /* tablette*/
@@ -389,9 +405,9 @@ h2 {
         width:65%;
     }
 
-    #popular_cards {
+    /*#popular_cards .card {
         width: 82%;
         height: 23%;
-    }
+    } */
 
 }
