@@ -1,4 +1,4 @@
-.border { 
+/*.border { 
     border: 3px solid black;
     margin: 2px;
 } 
@@ -17,7 +17,7 @@
 
 .purple {
     border-color: purple;
-} 
+} */
 
 body{
     margin: 0;
@@ -44,9 +44,7 @@ a {
 
 /* -----------------  champ de recherche --------------------- */
 
-#search {
-    padding: 0px 20px 0 20px; /*àmettre à chaque section sauf popular juste au titre */
-}
+
 
 #champ {
     display: flex;
@@ -165,7 +163,7 @@ a {
     justify-content: space-between;
     align-items: center;
     color: black;
-    padding: 25px 20px 5px 20px;
+  /*  padding: 25px 20px 5px 20px;*/
 }
 
 .fa-chart-line {
@@ -209,7 +207,7 @@ h4 {
 
 .card {
     background-color: white;
-    margin: 10px 20px 10px 20px;
+    margin: 10px 0px 10px 0px;
     border-radius: 20px;
     padding: 5px;
     box-shadow: 0px 0px 10px #e4e4e4;
@@ -250,7 +248,7 @@ h2 {
 }
 
 #housing .card {
-  margin: 10px 20px 10px 20px;
+  margin: 10px 0px 10px 0px;
   display: flex;
   flex-direction: column;
 }
@@ -273,8 +271,15 @@ h2 {
 }
 
 
-@media all and (max-width:600px){
+@media all and (max-width:600px){ /* mobile */
 
+    #search, #housing, #activities, footer{
+        margin: 0px 20px 0 20px; 
+    }
+
+    #popular {
+        padding: 0 20px 0 20px;
+    }
     #button_2 {
         display: none;
     }
@@ -287,9 +292,16 @@ h2 {
         display: flex;
         align-items: baseline;
     }
+
+   
 }
 
 @media all and (min-width: 601px) and (max-width: 991px) { /* tablette*/
+    
+    #search, #housing, #popular, #activities, footer {
+        margin: 0px 30px 0 30px; 
+    }
+    
     #button_1 {
         display: none;
     }
@@ -312,13 +324,26 @@ h2 {
     #popular_cards, #housing_cards{
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+       flex-wrap: wrap;
     }
 
-
+    
 }
 
-@media all and (min-width: 992px) {
+@media all and (min-width: 992px) { /* desktop*/
+
+    #search, #activities, footer {
+        margin: 0px 50px 0 50px; 
+    }
+
+    #container_housing {
+        margin: 0 50px 0 50px;
+    }
+
+    #housing {
+        margin-right: 40px;
+    }
+
     #button_1 {
         display: none;
     }
@@ -339,7 +364,7 @@ h2 {
     }
    
    
-    #container_housing {
+    #container_housing { /* met hebergement marseille a coté de populaires */
         display: flex;   
     }
 
@@ -352,8 +377,21 @@ h2 {
         background-color: #f2f2f2;
     }
 
-    #container_housing > #housing {
+    #container_housing > #housing { /*change ordre*/
         order: -1;
+    }
+
+    #popular {
+        width: 35%;
+    }
+
+    #housing {
+        width:65%;
+    }
+
+    #popular_cards {
+        width: 82%;
+        height: 23%;
     }
 
 }
