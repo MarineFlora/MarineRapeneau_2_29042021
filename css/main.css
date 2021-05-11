@@ -249,6 +249,7 @@ h4 {
   margin: 10px 0px 10px 0px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 5px;
   /* TAILLE % a mettre ici???? */
 }
@@ -383,6 +384,7 @@ h4 {
     #housing_cards {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     #housing {
@@ -405,5 +407,15 @@ h4 {
         width: 82%;
         height: 23%;
     } */
+
+    #activities_cards {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #vieux_port {
+        height: 445px;
+    }
+
 
 }
