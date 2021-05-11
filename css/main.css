@@ -42,6 +42,12 @@ a {
     color: black;  
 }
 
+h2 {
+    font-size: 1.1em;
+    font-weight: 700;
+    padding-right: 15px;
+}
+
 /* -----------------  champ de recherche --------------------- */
 
 
@@ -94,11 +100,7 @@ a {
 
 /* -------------- Filters ----------------- */
 
-#filters h2 {
-    font-size: 1.1em;
-    font-weight: 700;
-    padding-right: 15px;
-}
+
 
 #buttons_all {
     display: flex;
@@ -232,12 +234,8 @@ h4 {
     padding-bottom: 30px;
 }
 
-h2 {
-    font-size: 1.1em;
-    font-weight: 800;
-}
 
-#housing h1, #housing h2, #activities h1 {
+#housing h1, #activities h1 {
     padding: 25px 20px 20px 20px;
 } 
 
@@ -304,9 +302,7 @@ h2 {
         align-items: baseline;
     }
 
-     #activities {
-        height: 1380px; 
-    }
+    
 
 
 

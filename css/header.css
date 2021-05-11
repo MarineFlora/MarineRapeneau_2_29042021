@@ -34,11 +34,11 @@ body {
     padding: 0; /* résout problème du padding de la liste par défaut*/    
 }
 
-.navigation li { 
+ li { 
     list-style: none;  /*enlève points liste */ 
 }
 
-.navigation a { 
+a { 
     text-decoration: none; /*enlève surlignage liens*/
     color: black;  
 }
