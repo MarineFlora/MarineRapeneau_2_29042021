@@ -22,7 +22,8 @@
 body{
     margin: 0;
     font-family: "Raleway", sans-serif;
-    /*padding: 0px 30px 0 30px;*/
+    min-width:415px; 
+    
    
 }
 
@@ -157,7 +158,6 @@ h2 {
     background-color:#f2f2f2; 
     display: flex; /*est-ce utile? */
     flex-direction: column;
-   
 }
 
 #popular_title {
@@ -165,7 +165,7 @@ h2 {
     justify-content: space-between;
     align-items: center;
     color: black;
-  /*  padding: 25px 20px 5px 20px;*/
+
 }
 
 .fa-chart-line {
@@ -204,8 +204,9 @@ h4 {
 
 #popular_cards .card {
     display: flex;
-    flex-direction: row;
     padding: 5px;
+    height: 145px;
+    
 }
 
 .card {
@@ -213,12 +214,10 @@ h4 {
     margin: 10px 0px 10px 0px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px 5px #e4e4e4;
-   /* width: 335px; */
+    
 }
 
-#popular_cards {
-    padding-bottom: 20px;
-}
+
 
 #popular img { /* -------------------------PROBLEME ICI -----------------------------------------------------*/
     width: 40%; 
@@ -229,13 +228,9 @@ h4 {
 
 /*----------------------------- hebergement Marseille -----------------*/
 
-#housing h1 {
-    padding-top: 40px;
-    padding-bottom: 30px;
-}
 
 
-#housing h1, #activities h1 {
+#housing h1, #activities h1, #popular_title {
     padding: 25px 20px 20px 20px;
 } 
 
@@ -249,32 +244,23 @@ h4 {
   margin: 10px 0px 10px 0px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 5px;
-  /* TAILLE % a mettre ici???? */
+  
 }
 
 #housing .hotel_details  {
     margin: 5px ;
 }
 
-#housing h4, #housing h3, #housing .stars { /*pas un peu logn pour faire ça??? */
+#housing h4, #housing h3, #housing .stars { 
     margin: 5px;
 }
 
 
 /* --------- ACT -------*/
 
-#activities_cards .card {
-    height: 190px;
-    margin-bottom: 30px;
-}
 
-#activities img {
-    border-radius: 15px 15px 0 0px;
-    height: 135px;
-    width: 100%;
-    object-fit: cover;
-}
 
 #activities h3 {
     padding: 5px 0 15px 15px;
@@ -302,9 +288,31 @@ h4 {
         align-items: baseline;
     }
 
+    .card {
+        width: 335px;
+    }
+    #housing .card {
+        width: 335px;
+        
+    }
+    #popular_cards, #housing_cards, #activities_cards {
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #activities_cards .card {
+        height: 190px;
+        margin-bottom: 30px;
+    }
     
-
-
+    #activities img {
+        border-radius: 15px 15px 0 0px;
+        height: 135px;
+        width: 100%;
+        object-fit: cover;
+    }
 
 }
 
@@ -314,6 +322,10 @@ h4 {
         margin: 0px 30px 0 30px; 
     }
     
+    #subheading {
+        margin-top: 20px;
+    }
+
     #button_1 {
         display: none;
     }
@@ -333,13 +345,74 @@ h4 {
         align-items: center;
     }
 
-    #popular_cards, #housing_cards{
+    #popular_cards, #housing_cards, #activities_cards {
         display: flex;
         flex-direction: row;
-       flex-wrap: wrap;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 
+    #popular .card {
+        width: 335px;
+    }
+        #housing .card {
+            width: 250px;
+        }
+
+
+            #activities_cards{
+                width: 300px;
+            }
+
+            #activities_cards img{
+                border-radius: 15px 15px 0 0px;
+                width: 100%;
+                object-fit: cover;
+            }
+        #vieux_port, #calanques { /* se repete dans desktop*/
+            height: 445px;
+         
+        }
     
+        #vieux_port img, #calanques img {
+            height: 390px;  
+        }
+
+
+        #pomegues {
+            height: 235px;
+            
+        }
+
+        #pomegues img{
+            height: 180px;
+            
+        }
+
+        #frioul {
+            height: 165px;
+        }
+
+        #frioul img{
+            height: 110px;
+           
+        }
+
+        #notre_dame {
+            height:195px;
+        }
+
+        #notre_dame img{
+            height: 140px;
+        }
+
+        #longchamp {
+            height: 210px;
+        }
+
+        #longchamp img {
+            height: 150px;
+        }
 }
 
 @media all and (min-width: 992px) { /* desktop*/
@@ -347,6 +420,15 @@ h4 {
     #search, #activities, footer {
         margin: 0px 50px 0 50px; 
     }
+
+    #logo {
+        padding-left: 25px;
+    }
+
+    #subheading {
+        margin-top: 20px;
+    }
+
 
     #container_housing {
         margin: 0 50px 0 50px;
@@ -380,9 +462,10 @@ h4 {
         display: flex;   
     }
 
-    #housing_cards {
+    #housing_cards, #activities_cards {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     #housing {
@@ -401,9 +484,72 @@ h4 {
         width:65%;
     }
 
-    /*#popular_cards .card {
-        width: 82%;
-        height: 23%;
-    } */
+    #popular .cards { /* not working?? */
+        width: 345px;
+    }
+
+    #housing .card {
+        width: 250px;
+        
+    }
+
+    #activities_cards {
+        width: 300px;
+    }
+    
+
+
+
+    #activities_cards img{
+        border-radius: 15px 15px 0 0px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #vieux_port, #calanques { /* se repete dans tablette*/
+        height: 445px;
+     
+    }
+
+    #vieux_port img, #calanques img {
+        height: 390px;  
+    }
+
+
+    #pomegues {
+        height: 235px;
+        
+    }
+
+    #pomegues img{
+        height: 180px;
+        
+    }
+
+    #frioul {
+        height: 165px;
+    }
+
+    #frioul img{
+        height: 110px;
+       
+    }
+
+    #notre_dame {
+        height:195px;
+    }
+
+    #notre_dame img{
+        height: 140px;
+    }
+
+    #longchamp {
+        height: 210px;
+    }
+
+    #longchamp img {
+        height: 150px;
+    }
+
 
 }
