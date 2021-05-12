@@ -260,17 +260,7 @@ h4 {
 
 /* --------- ACT -------*/
 
-#activities_cards .card {
-    height: 190px;
-    margin-bottom: 30px;
-}
 
-#activities img {
-    border-radius: 15px 15px 0 0px;
-    height: 135px;
-    width: 100%;
-    object-fit: cover;
-}
 
 #activities h3 {
     padding: 5px 0 15px 15px;
@@ -310,6 +300,18 @@ h4 {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    #activities_cards .card {
+        height: 190px;
+        margin-bottom: 30px;
+    }
+    
+    #activities img {
+        border-radius: 15px 15px 0 0px;
+        height: 135px;
+        width: 100%;
+        object-fit: cover;
     }
 
 }
@@ -358,6 +360,59 @@ h4 {
         }
 
 
+            #activities_cards{
+                width: 300px;
+            }
+
+            #activities_cards img{
+                border-radius: 15px 15px 0 0px;
+                width: 100%;
+                object-fit: cover;
+            }
+        #vieux_port, #calanques { /* se repete dans desktop*/
+            height: 445px;
+         
+        }
+    
+        #vieux_port img, #calanques img {
+            height: 390px;  
+        }
+
+
+        #pomegues {
+            height: 235px;
+            
+        }
+
+        #pomegues img{
+            height: 180px;
+            
+        }
+
+        #frioul {
+            height: 165px;
+        }
+
+        #frioul img{
+            height: 110px;
+           
+        }
+
+        #notre_dame {
+            height:195px;
+        }
+
+        #notre_dame img{
+            height: 140px;
+        }
+
+        #longchamp {
+            height: 210px;
+        }
+
+        #longchamp img {
+            height: 150px;
+        }
 }
 
 @media all and (min-width: 992px) { /* desktop*/
@@ -439,12 +494,61 @@ h4 {
     }
 
     #activities_cards {
-        display: flex;
-        justify-content: space-between;
+        width: 300px;
     }
     
-    #vieux_port {
+
+
+
+    #activities_cards img{
+        border-radius: 15px 15px 0 0px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #vieux_port, #calanques { /* se repete dans tablette*/
         height: 445px;
+     
+    }
+
+    #vieux_port img, #calanques img {
+        height: 390px;  
+    }
+
+
+    #pomegues {
+        height: 235px;
+        
+    }
+
+    #pomegues img{
+        height: 180px;
+        
+    }
+
+    #frioul {
+        height: 165px;
+    }
+
+    #frioul img{
+        height: 110px;
+       
+    }
+
+    #notre_dame {
+        height:195px;
+    }
+
+    #notre_dame img{
+        height: 140px;
+    }
+
+    #longchamp {
+        height: 210px;
+    }
+
+    #longchamp img {
+        height: 150px;
     }
 
 
