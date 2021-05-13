@@ -22,9 +22,15 @@
 body{
     margin: 0;
     font-family: "Raleway", sans-serif;
-    min-width:415px; 
-  /*  max-width: 1600px; /* pb page non centrée*/
+    display: flex;
+    justify-content: center;
+  
    
+}
+
+#container {
+    min-width:415px; 
+    max-width: 1400px; /* pb page non centrée*/
 }
 
  h1 {
@@ -211,7 +217,7 @@ h4 {
 
 .card {
     background-color: white;
-    margin: 10px 0px 10px 0px;
+    margin: 10px 10px 10px 10px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px 5px #e4e4e4;
     
@@ -241,7 +247,6 @@ h4 {
 }
 
 #housing .card {
-  margin: 10px 0px 10px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -258,15 +263,19 @@ h4 {
 }
 
 
+
+
 /* --------- ACT -------*/
 
-
+#activities {
+    padding-bottom: 50px;
+}
 
 #activities h3 {
     padding: 5px 0 15px 15px; /*--- a changer que ce soit égal...--*/
 }
 
-@media all and (max-width:600px){ /* mobile */
+@media all and (max-width:700px){ /* mobile ajuster à 700px car activités probleme placement*/
 
     #search, #housing, #activities, footer{
         margin: 0px 20px 0 20px; 
@@ -316,7 +325,7 @@ h4 {
 
 }
 
-@media all and (min-width: 601px) and (max-width: 991px) { /* tablette*/
+@media all and (min-width: 701px) and (max-width: 991px) { /* tablette*/
     
     #search, #housing, #popular, #activities, footer {
         margin: 0px 30px 0 30px; 
@@ -352,11 +361,7 @@ h4 {
         flex-wrap: wrap;
     }
 
-    #pomegues_frioul, #notre_dame_longchamp {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+    
 
     #popular .card {
         width: 335px;
@@ -420,6 +425,14 @@ h4 {
         #longchamp img {
             height: 150px;
         }
+
+        #pomegues_frioul, #notre_dame_longchamp {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        
+        }
+        
 }
 
 @media all and (min-width: 992px) { /* desktop*/
@@ -469,10 +482,10 @@ h4 {
         display: flex;   
     }
 
-    #housing_cards, #activities_cards {
+    #housing_cards, #activities_cards, #popular_cards {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content:space-around;
     }
 
     #housing {
@@ -504,7 +517,12 @@ h4 {
         width: 300px;
     }
     
-
+    #pomegues_frioul, #notre_dame_longchamp {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+    }
 
 
     #activities_cards img{
