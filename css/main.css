@@ -531,7 +531,7 @@ h4 {
 
     #activities_cards .card {
         width: 300px;
-        margin: 0;
+        margin: 10px;
     }
     
     #pomegues_frioul, #notre_dame_longchamp {
