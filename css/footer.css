@@ -26,7 +26,7 @@ body {
 footer {
     background-color: #f2f2f2; 
    margin:0;
-   padding-top: 30px;
+   padding: 20px;
 }
 
 footer ul {
@@ -56,7 +56,6 @@ footer li {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-
     }
 
 }
@@ -69,10 +68,5 @@ footer li {
         justify-content: space-between;
     }
 
-    footer div {
-        
-
-
-    }
 
 }
