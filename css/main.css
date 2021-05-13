@@ -1,4 +1,4 @@
-/*:.border { 
+/*.border { 
     border: 1px solid black;
     margin: 0px;
 } 
@@ -36,7 +36,6 @@ body{
  h1 {
     font-weight: 800;
     font-size: 1.3em;
-    margin: 10px 0 10px 0;
 }
 
 #search p {
@@ -73,11 +72,11 @@ h2 {
     color: white;
 }
 
-#button_1 {
+#button_mobile {
     border-radius: 15px;
 }
 
-#button_2 {
+#button_desktop {
     border-radius: 0 15px 15px 0;
      font-weight: 600;
 
@@ -115,25 +114,33 @@ h2 {
     flex-wrap: wrap;
 }
 
+
+
 #buttons_all button {
-    font-family: "Raleway", sans-serif;
-    font-weight: 900; 
     background-color: white;
     border: solid 2px #d9d9d9;
     border-radius: 30px ;
-    padding-right: 15px;
+    padding-right: 5px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#filters i { /* pb: le bg des icones n'est pas tjrs rond car en fonction de la forme incone + pas exactement même taille que le button */
+#filters i { 
     color: #0065fc;
     background-color: #deebff ;
-   /* height: 15px; /* si je modifie la taille modifie la taille du conteneur aussi, trouver un moyen pour augementer taille sans bouger button*/
-    width: 15px;
-    padding: 15px;
+    height: 45px; /* change taille du background color */
+    width: 45px;
     border-radius: 30px;
-    position: relative;
-    top:0px; left: -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: -10px;
 }
+
+
 
 #filters button:hover {
     background-color: #0065fc;
@@ -211,13 +218,17 @@ h4 {
 #popular_cards .card {
     display: flex;
     padding: 5px;
-    height: 145px;
-    
+    height: 140px;
+}
+
+#popular_cards {
+    padding: 0 30px 30px 30px;
+
 }
 
 .card {
     background-color: white;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 15px 10px 15px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px 5px #e4e4e4;
     
@@ -225,9 +236,9 @@ h4 {
 
 
 
-#popular img { /* -------------------------PROBLEME ICI -----------------------------------------------------*/
+#popular img { 
     width: 40%; 
-    height: 140px;/* no comprendo ce que je veux faire... je veux que l'img prennent 90% du contenant, j'ai le droit de mettre en px? car fonctionne comme ça, voir au responsive*/
+    height: 140px;
     object-fit: cover;
     border-radius: 15px 0 0 15px;
 }
@@ -236,9 +247,13 @@ h4 {
 
 
 
-#housing h1, #activities h1, #popular_title {
-    padding: 25px 20px 20px 20px;
+#housing h1,  #popular_title, #activities h1 {
+    padding: 30px 20px 20px 30px;
 } 
+
+#housing h2 {
+    padding-left: 30px;
+}
 
 #housing img { 
     height: 115px; /* fonctionne mais en responsive après image trop large par rapport à taille...*/ 
@@ -281,10 +296,8 @@ h4 {
         margin: 0px 20px 0 20px; 
     }
 
-    #popular {
-        padding: 0 20px 0 20px;
-    }
-    #button_2 {
+   
+    #button_desktop {
         display: none;
     }
 
@@ -325,9 +338,9 @@ h4 {
 
 }
 
-@media all and (min-width: 701px) and (max-width: 991px) { /* tablette*/
+@media all and (min-width: 701px) and (max-width: 1180px) { /* tablette*/
     
-    #search, #housing, #popular, #activities, footer {
+    #search, #housing, #activities {
         margin: 0px 30px 0 30px; 
     }
     
@@ -335,7 +348,7 @@ h4 {
         margin-top: 20px;
     }
 
-    #button_1 {
+    #button_mobile {
         display: none;
     }
 
@@ -435,15 +448,12 @@ h4 {
         
 }
 
-@media all and (min-width: 992px) { /* desktop*/
+@media all and (min-width: 1181px) { /* desktop*/
 
     #search, #activities, footer {
         margin: 0px 50px 0 50px; 
     }
 
-    #logo {
-        padding-left: 25px;
-    }
 
     #subheading {
         margin-top: 20px;
@@ -454,16 +464,14 @@ h4 {
         margin: 0 50px 0 50px;
     }
 
-    #housing {
-        margin-right: 40px;
-    }
+  
 
-    #button_1 {
+    #button_mobile {
         display: none;
     }
 
     #buttons_all button {
-        margin: 5px;
+        margin: 15px;
     }
     
     #filters {
@@ -482,14 +490,24 @@ h4 {
         display: flex;   
     }
 
-    #housing_cards, #activities_cards, #popular_cards {
+    #housing_cards, #popular_cards {
         display: flex;
         flex-wrap: wrap;
-        justify-content:space-around;
+        justify-content:space-evenly;
+    }
+
+    #activities_cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
     }
 
     #housing {
         background-color: #f2f2f2;
+        border-radius: 15px;
+        margin-right: 40px;
+
+       
     }
 
     #container_housing > #housing { /*change ordre*/
@@ -498,14 +516,12 @@ h4 {
 
     #popular {
         width: 35%;
+        border-radius: 15px;
     }
 
-    #housing {
-        width:65%;
-    }
 
-    #popular .cards { /* not working?? */
-        width: 345px;
+    #popular .card { /* BUG de 992 à 1200px les élements de la carte sorte du cadre */
+        width: 340px;
     }
 
     #housing .card {
@@ -515,6 +531,7 @@ h4 {
 
     #activities_cards .card {
         width: 300px;
+        margin: 10px;
     }
     
     #pomegues_frioul, #notre_dame_longchamp {

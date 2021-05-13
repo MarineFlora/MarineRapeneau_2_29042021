@@ -15,11 +15,12 @@ body {
 
     font-family: 'Raleway', sans-serif;
     margin: 0;
-    min-width:365px; 
+    min-width:400px; 
 }
 
+
 #logo {
-    margin: 10px 20px 10px 20px;
+    margin: 10px 30px 10px 30px;
 }
 
 #signUp {
@@ -27,9 +28,11 @@ body {
     margin-right: 20px;
 }
 
+
+
 .navigation {
     font-weight: 600;
-    font-size: 0.9em;
+    font-size: 1.1em;
 }
 
 .navigation ul { 
@@ -50,7 +53,7 @@ a {
 }
 
 
-@media all and (max-width:600px) { /*mobile */
+@media all and (max-width:700px) { /*mobile */
 
     header {
         display: flex;
@@ -59,8 +62,9 @@ a {
         }
 
     #logo {
-            position: absolute;
-           top:5px;   
+        position: absolute;
+        top:5px;   
+        left: 5px;
         }
 
     .navigation {
@@ -93,7 +97,7 @@ a {
 
 }
 
-@media all and (min-width:601px) /* tablette et desktop*/
+@media all and (min-width:701px) /* tablette et desktop*/
 {
     header {
         display: flex;
@@ -127,6 +131,15 @@ a {
     
     #signUp {
         padding: 25px 15px 0 15px;
+    }
+
+    @media all and (min-width: 992px) { /* desktop*/
+
+        #logo {
+            margin-left: 50px;
+        }
+    
+    
     }
 
 }
