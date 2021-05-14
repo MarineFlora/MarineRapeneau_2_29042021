@@ -287,10 +287,13 @@ h4 {
 }
 
 #activities h3 {
-    padding: 5px 0 15px 15px; /*--- a changer que ce soit égal...--*/
+    padding: 15px;
+    margin:0; 
 }
 
-@media all and (max-width:700px){ /* mobile ajuster à 700px car activités probleme placement*/
+@media all and (max-width:719px){ /* mobile ajuster à 700px car activités probleme placement*/
+
+    
 
     #search, #housing, #activities, footer{
         margin: 0px 20px 0 20px; 
@@ -338,8 +341,10 @@ h4 {
 
 }
 
-@media all and (min-width: 701px) and (max-width: 1180px) { /* tablette*/
+@media all and (min-width: 720px) and (max-width: 1199px) { /* tablette*/
     
+   
+
     #search, #housing, #activities {
         margin: 0px 30px 0 30px; 
     }
@@ -374,7 +379,7 @@ h4 {
         flex-wrap: wrap;
     }
 
-    
+   
 
     #popular .card {
         width: 335px;
@@ -448,7 +453,7 @@ h4 {
         
 }
 
-@media all and (min-width: 1181px) { /* desktop*/
+@media all and (min-width: 1200px) { /* desktop, ajuster en fonction de mes élements*/
 
     #search, #activities, footer {
         margin: 0px 50px 0 50px; 
@@ -499,7 +504,7 @@ h4 {
     #activities_cards {
         display: flex;
         flex-wrap: wrap;
-        justify-content:space-between;
+        justify-content: space-between;
     }
 
     #housing {
@@ -520,7 +525,7 @@ h4 {
     }
 
 
-    #popular .card { /* BUG de 992 à 1200px les élements de la carte sorte du cadre */
+    #popular .card { 
         width: 340px;
     }
 
