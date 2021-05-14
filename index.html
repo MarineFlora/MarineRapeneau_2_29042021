@@ -14,258 +14,258 @@
 
     <body>
         <div id="container">
-        <header class="border">
-            
-            <img id="logo" src="images/logo/Reservia.svg" alt="logo Reservia" class="border red" />
+            <header class="border">
                 
-            <nav class="navigation">
-                <h3 id="signUp" class="border red">S'inscrire</h3>
-                <ul class="border red">
-                    <li class="border red"><a class="border blue" href="#housing">Hébergements</a></li>
-                    <li class="border red"><a class="border blue" href="#activities">Activités</a></li>
-                </ul>
-            </nav>
-            
-        </header>
-
-        <main>
-    <!-- SECTION 1 RECHERCHE -->
-            <section id="search" class="border red">
-                <div id="subheading" class="border blue">
-                    <h1 class="border orange">Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p class="border orange">En plein centre ville ou en pleine nature</p>
-                </div>
-
-                <div id="champ" class="border blue">
-                    <i class="fas fa-map-marker-alt border orange"></i> 
-                    <p><input type="text" id="location" value="Marseille, France" class="border orange"/></p>
-                    <button id="button_mobile"><i class="fas fa-search border orange"></i></button> 
-                    <button id="button_desktop">Rechercher</button>
-                </div>
-
-                <div id="filters" class="border blue"> 
-                    <h2 class="border orange">Filtres</h2>
+                <img id="logo" src="images/logo/Reservia.svg" alt="logo Reservia" class="border red" />
                     
-                    <div id="buttons_all">
-                            <button class="border purple"> <i class="fas fa-money-bill-wave border purple"></i> <h2>Economique</h2></button>
-                            <button class="border purple"> <i class="fas fa-child border purple"></i> <h2>Famillial</h2></button> 
-                            <button class="border purple"><i class="fas fa-heart border purple"></i> <h2>Romantique</h2></button> 
-                            <button class="border purple"><i class="fas fa-dog border purple"></i> <h2>Animaux autorisés</h2></button> 
+                <nav class="navigation">
+                    <h3 id="signUp" class="border red">S'inscrire</h3>
+                    <ul class="border red">
+                        <li class="border red"><a class="border blue" href="#housing">Hébergements</a></li>
+                        <li class="border red"><a class="border blue" href="#activities">Activités</a></li>
+                    </ul>
+                </nav>
+                
+            </header>
+
+            <main>
+        <!-- SECTION 1 RECHERCHE -->
+                <section id="search" class="border red">
+                    <div id="subheading" class="border blue">
+                        <h1 class="border orange">Trouvez votre hébergement pour des vacances de rêve</h1>
+                        <p class="border orange">En plein centre ville ou en pleine nature</p>
+                    </div>
+
+                    <div id="champ" class="border blue">
+                        <i class="fas fa-map-marker-alt border orange"></i> 
+                        <p><input type="text" id="location" value="Marseille, France" class="border orange"/></p>
+                        <button id="button_mobile"><i class="fas fa-search border orange"></i></button> 
+                        <button id="button_desktop">Rechercher</button>
+                    </div>
+
+                    <div id="filters" class="border blue"> 
+                        <h2 class="border orange">Filtres</h2>
+                        
+                        <div id="buttons_filters">
+                                <button class="border purple"> <i class="fas fa-money-bill-wave border purple"></i> <h2>Economique</h2></button>
+                                <button class="border purple"> <i class="fas fa-child border purple"></i> <h2>Famillial</h2></button> 
+                                <button class="border purple"><i class="fas fa-heart border purple"></i> <h2>Romantique</h2></button> 
+                                <button class="border purple"><i class="fas fa-dog border purple"></i> <h2>Animaux autorisés</h2></button> 
+                        </div>
+                    </div>
+
+                    <div id="info" class="border blue">
+                        <i class="fas fa-info border orange"></i> 
+                        <p class="border orange">Plus de 500 logements sont disponibles dans cette ville</p>
+                    </div>
+                </section>
+
+            <div id="container_housing">
+        <!-- SECTION 2 LES PLUS POPULAIRES -->
+                <section id="popular" class="border red">
+                    <div id="popular_title" class="border blue">
+                        <h1 class="border orange">Les plus populaires</h1> 
+                        <i class="fas fa-chart-line border orange"></i>
+                    </div>
+
+                    <div id="popular_cards" class="border blue">
+                        <a class="border orange card" href=""> <!--carte cliquable en intégralité-->
+                            <img class="border purple" src="images/hebergements/4_small/hotel1.jpg" alt="chambre d'hôtel"/>
+                            
+                            <div class="hotel_details border red">
+                                <h3 class="border purple">Hôtel Le soleil du matin</h3>
+                                <h4 class="border purple">Nuit à partir de 128€</h4>
+                                <div class="border purple stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="border orange card" href="">
+                            <img class="border purple" src="images/hebergements/4_small/hotel2.jpg" alt="chambre d'hôtel"/>
+                            
+                            <div class="hotel_details border red">
+                                <h3 class="border purple">Au coeur de l'eau Chambres d'hôtes</h3>
+                                <h4 class="border purple">Nuit à partir de 71€</h4>
+                                <div class="border purple stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star last"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="border orange card" href="">
+                            <img class="border purple" src="images/hebergements/4_small/hotel3.jpg" alt="chambre d'hôtel" />
+                            
+                            <div class="hotel_details border red">
+                                <h3 class="border purple">Hôtel Tout bleu et Blanc</h3>
+                                <h4 class="border purple">Nuit à partir de 68€</h4>
+                                <div class="border purple stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star last"></i>
+                                </div>
+                            </div>
+                        </a>
+                
+                    </div>
+                </section>
+                
+        <!-- SECTION 3 HEBERGEMENTS A MARSEILLE -->
+                <section id="housing" class="border red">
+                    <h1 class="border blue">Hébergements à Marseille</h1>
+
+                
+                    <div id="housing_cards" class="border blue">
+
+                        
+                        <a class="border orange card" href=""> <!--carte cliquable en intégralité-->
+                            <img class="border purple" src="images/hebergements/4_small/hotel4.jpg" alt="chambre d'auberge" />
+                            
+                            <div class="hotel_details border red">
+                                <h3 class="border purple">Auberge la Cannebière</h3>
+                                <h4 class="border purple">Nuit à partir de <strong>25€</strong></h4>
+                                <div class="border purple stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star last"></i>
+                                </div>
+                            </div>
+                        </a>
+                        
+
+                        <a class="border orange card" href="">
+                            <img class="border purple" src="images/hebergements/4_small/hotel5.jpg" alt="chambre d'hôtel" />
+                            
+                            <div class="hotel_details">
+                                <h3 class="border purple">Hôtel du port</h3>
+                                <h4 class="border purple">Nuit à partir de 52€</h4>
+                                <div class="border purple stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="border orange card" href="">
+                            <img class="border purple" src="images/hebergements/4_small/hotel6.jpg" alt="chambre d'hôtel" />
+                            
+                            <div class="hotel_details">
+                                <h3 class="border purple">Hôtel Les mouettes</h3>
+                                <h4 class="border purple">Nuit à partir de 76€</h4>
+                                <div class="border purple stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star last"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="border orange card" href="">
+                            <img class="border purple" src="images/hebergements/4_small/hotel7.jpg" alt="chambre d'hôtel"/>
+                            
+                            <div class="hotel_details">
+                                <h3 class="border purple">Hôtel de la mer</h3>
+                                <h4 class="border purple">Nuit à partir de 46€</h4>
+                                <div class="border purple stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star last"></i><i class="fas fa-star last"></i>
+                                </div>  
+                            </div>
+                        </a>
+
+                        <a class="border orange card" href="">
+                            <img class="border purple" src="images/hebergements/4_small/hotel8.jpg" alt="chambre d'auberge"/>
+                            
+                            <div class="hotel_details">
+                                <h3 class="border purple">Auberge Le Panier</h3>
+                                <h4 class="border purple">Nuit à partir de <strong>23€</strong></h4>
+                                <div class="border purple stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star last"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="border orange card" href="">
+                            <img class="border purple" src="images/hebergements/4_small/hotel9.jpg" alt="chambre d'hôtel" />
+                            <div class="hotel_details">
+                                <h3 class="border purple">Hôtel chez Amina</h3>
+                                <h4 class="border purple">Nuit à partir de 96€</h4>
+                                <div class="border purple stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <h2 class="border blue">Afficher plus</h2>
+                </section>
+            </div>
+            
+
+        <!-- SECTION 4 ACTIVITES A MARSEILLE -->
+            <section class="border red" id="activities">
+                <h1 class="border blue">Activités à Marseille</h1>
+
+                <div id="activities_cards" class="border blue">
+                    <div id="vieux_port" class="border orange card"><a href="">
+                        <img class="border purple" src="images/activites/3_medium/vieuxport.jpg" alt="vieux port" />
+                        <h3 class="border purple">Vieux Port</h3>
+                    </a></div>
+
+                    <div id="pomegues_frioul">
+                        <div id="pomegues" class="border orange card"><a href="">
+                            <img class="border purple" src="images/activites/4_small/pomegues.jpg" alt="fort de Pomègues" />
+                            <h3 class="border purple">Fort de Pomègues</h3>
+                        </a></div>
+
+                        <div id="frioul" class="border orange card"><a href="">
+                            <img class="border purple" src="images/activites/4_small/frioul.jpg" alt="Îles du Frioul" />
+                            <h3 class="border purple">Îles du Frioul</h3>
+                        </a></div>
+                    </div>
+
+                    <div id="calanques" class="border orange card"><a href="">
+                        <img class="border purple" src="images/activites/4_small/calanques.jpg" alt="Parc national des Calanques"/>
+                        <h3 class="border purple">Parc National des Calanques</h3>
+                    </a></div>
+
+                    <div id="notre_dame_longchamp">
+                        <div id="notre_dame" class="border orange card"><a href="">
+                            <img class="border purple" src="images/activites/4_small/damegarde.jpg" alt="Notre-Dame-de-la-Garde"/>
+                            <h3 class="border purple">Notre-Dame-de-la-Garde</h3>
+                        </a></div>
+
+                        <div id="longchamp" class="border orange card"><a href="">
+                            <img class="border purple" src="images/activites/4_small/longchamp.jpg" alt="Parc Longchamp"/>
+                            <h3 class="border purple">Parc Longchamp</h3>
+                        </a></div>
                     </div>
                 </div>
-
-                <div id="info" class="border blue">
-                    <i class="fas fa-info border orange"></i> 
-                    <p class="border orange">Plus de 500 logements sont disponibles dans cette ville</p>
-                </div>
             </section>
 
-        <div id="container_housing">
-    <!-- SECTION 2 LES PLUS POPULAIRES -->
-            <section id="popular" class="border red">
-                <div id="popular_title" class="border blue">
-                    <h1 class="border orange">Les plus populaires</h1> 
-                    <i class="fas fa-chart-line border orange"></i>
+            </main>
+
+            <!-- FOOTER -->
+            <footer class="border"> 
+                <div class="border red">
+                    <h2 class="border blue">A propos</h2>
+                    <ul class="border blue">
+                        <li class="border orange">Fonctionnement du site</li>
+                        <li class="border orange">Conditions générales de vente</li>
+                        <li class="border orange">Données et confidentialité</li>
+                    </ul>
                 </div>
 
-                <div id="popular_cards" class="border blue">
-                    <a class="border orange card" href=""> <!--carte cliquable en intégralité-->
-                        <img class="border purple" src="images/hebergements/4_small/hotel1.jpg" alt="chambre d'hôtel"/>
-                        
-                        <div class="hotel_details border red">
-                            <h3 class="border purple">Hôtel Le soleil du matin</h3>
-                            <h4 class="border purple">Nuit à partir de 128€</h4>
-                            <div class="border purple stars">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 
-                            </div>
-                        </div>
-                    </a>
-
-                    <a class="border orange card" href="">
-                        <img class="border purple" src="images/hebergements/4_small/hotel2.jpg" alt="chambre d'hôtel"/>
-                        
-                        <div class="hotel_details border red">
-                            <h3 class="border purple">Au coeur de l'eau Chambres d'hôtes</h3>
-                            <h4 class="border purple">Nuit à partir de 71€</h4>
-                            <div class="border purple stars">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star last"></i>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a class="border orange card" href="">
-                        <img class="border purple" src="images/hebergements/4_small/hotel3.jpg" alt="chambre d'hôtel" />
-                        
-                        <div class="hotel_details border red">
-                            <h3 class="border purple">Hôtel Tout bleu et Blanc</h3>
-                            <h4 class="border purple">Nuit à partir de 68€</h4>
-                            <div class="border purple stars">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star last"></i>
-                            </div>
-                        </div>
-                    </a>
-            
-                </div>
-            </section>
-            
-    <!-- SECTION 3 HEBERGEMENTS A MARSEILLE -->
-            <section id="housing" class="border red">
-                <h1 class="border blue">Hébergements à Marseille</h1>
-
-            
-                <div id="housing_cards" class="border blue">
-
-                    
-                    <a class="border orange card" href=""> <!--carte cliquable en intégralité-->
-                        <img class="border purple" src="images/hebergements/4_small/hotel4.jpg" alt="chambre d'auberge" />
-                        
-                        <div class="hotel_details border red">
-                            <h3 class="border purple">Auberge la Cannebière</h3>
-                            <h4 class="border purple">Nuit à partir de <strong>25€</strong></h4>
-                            <div class="border purple stars">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star last"></i>
-                            </div>
-                        </div>
-                    </a>
-                    
-
-                    <a class="border orange card" href="">
-                        <img class="border purple" src="images/hebergements/4_small/hotel5.jpg" alt="chambre d'hôtel" />
-                        
-                        <div class="hotel_details">
-                            <h3 class="border purple">Hôtel du port</h3>
-                            <h4 class="border purple">Nuit à partir de 52€</h4>
-                            <div class="border purple stars">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a class="border orange card" href="">
-                        <img class="border purple" src="images/hebergements/4_small/hotel6.jpg" alt="chambre d'hôtel" />
-                        
-                        <div class="hotel_details">
-                            <h3 class="border purple">Hôtel Les mouettes</h3>
-                            <h4 class="border purple">Nuit à partir de 76€</h4>
-                            <div class="border purple stars">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star last"></i>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a class="border orange card" href="">
-                        <img class="border purple" src="images/hebergements/4_small/hotel7.jpg" alt="chambre d'hôtel"/>
-                        
-                        <div class="hotel_details">
-                            <h3 class="border purple">Hôtel de la mer</h3>
-                            <h4 class="border purple">Nuit à partir de 46€</h4>
-                            <div class="border purple stars">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star last"></i><i class="fas fa-star last"></i>
-                            </div>  
-                        </div>
-                    </a>
-
-                    <a class="border orange card" href="">
-                        <img class="border purple" src="images/hebergements/4_small/hotel8.jpg" alt="chambre d'auberge"/>
-                        
-                        <div class="hotel_details">
-                            <h3 class="border purple">Auberge Le Panier</h3>
-                            <h4 class="border purple">Nuit à partir de <strong>23€</strong></h4>
-                            <div class="border purple stars">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star last"></i>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a class="border orange card" href="">
-                        <img class="border purple" src="images/hebergements/4_small/hotel9.jpg" alt="chambre d'hôtel" />
-                        <div class="hotel_details">
-                            <h3 class="border purple">Hôtel chez Amina</h3>
-                            <h4 class="border purple">Nuit à partir de 96€</h4>
-                            <div class="border purple stars">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </a>
-
+                <div class="border red">
+                    <h2 class="border blue">Nos hébergements</h2>
+                    <ul class="border blue">
+                        <li class="border orange">Charte qualité</li>
+                        <li class="border orange">Soumettre votre hôtel</li>
+                    </ul>
                 </div>
 
-                <h2 class="border blue">Afficher plus</h2>
-            </section>
+                <div class="border red">
+                    <h2 class="border blue">Assistance</h2>
+                    <ul class="border blue">
+                        <li class="border orange">Centre d'aide</li>
+                        <li class="border orange">Nous contacter</li>
+                    </ul>
+                </div>
+            </footer>
         </div>
-        
-
-    <!-- SECTION 4 ACTIVITES A MARSEILLE -->
-        <section class="border red" id="activities">
-            <h1 class="border blue">Activités à Marseille</h1>
-
-            <div id="activities_cards" class="border blue">
-                <div id="vieux_port" class="border orange card"><a href="">
-                    <img class="border purple" src="images/activites/3_medium/vieuxport.jpg" alt="vieux port" />
-                    <h3 class="border purple">Vieux Port</h3>
-                </a></div>
-
-                <div id="pomegues_frioul">
-                    <div id="pomegues" class="border orange card"><a href="">
-                        <img class="border purple" src="images/activites/4_small/pomegues.jpg" alt="fort de Pomègues" />
-                        <h3 class="border purple">Fort de Pomègues</h3>
-                    </a></div>
-
-                    <div id="frioul" class="border orange card"><a href="">
-                        <img class="border purple" src="images/activites/4_small/frioul.jpg" alt="Îles du Frioul" />
-                        <h3 class="border purple">Îles du Frioul</h3>
-                    </a></div>
-                </div>
-
-                <div id="calanques" class="border orange card"><a href="">
-                    <img class="border purple" src="images/activites/4_small/calanques.jpg" alt="Parc national des Calanques"/>
-                    <h3 class="border purple">Parc National des Calanques</h3>
-                </a></div>
-
-                <div id="notre_dame_longchamp">
-                    <div id="notre_dame" class="border orange card"><a href="">
-                        <img class="border purple" src="images/activites/4_small/damegarde.jpg" alt="Notre-Dame-de-la-Garde"/>
-                        <h3 class="border purple">Notre-Dame-de-la-Garde</h3>
-                    </a></div>
-
-                    <div id="longchamp" class="border orange card"><a href="">
-                        <img class="border purple" src="images/activites/4_small/longchamp.jpg" alt="Parc Longchamp"/>
-                        <h3 class="border purple">Parc Longchamp</h3>
-                    </a></div>
-                </div>
-            </div>
-        </section>
-
-        </main>
-
-        <!-- FOOTER -->
-        <footer class="border"> 
-            <div class="border red">
-                <h2 class="border blue">A propos</h2>
-                <ul class="border blue">
-                    <li class="border orange">Fonctionnement du site</li>
-                    <li class="border orange">Conditions générales de vente</li>
-                    <li class="border orange">Données et confidentialité</li>
-                </ul>
-            </div>
-
-            <div class="border red">
-                <h2 class="border blue">Nos hébergements</h2>
-                <ul class="border blue">
-                    <li class="border orange">Charte qualité</li>
-                    <li class="border orange">Soumettre votre hôtel</li>
-                </ul>
-            </div>
-
-            <div class="border red">
-                <h2 class="border blue">Assistance</h2>
-                <ul class="border blue">
-                    <li class="border orange">Centre d'aide</li>
-                    <li class="border orange">Nous contacter</li>
-                </ul>
-            </div>
-        </footer>
-    </div>
     </body>
 </html>
 

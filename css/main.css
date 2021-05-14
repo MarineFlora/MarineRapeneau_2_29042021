@@ -33,14 +33,19 @@ body{
     max-width: 1500px; /* pb page non centrée*/
 }
 
+
+ 
  h1 {
     font-weight: 800;
-    font-size: 1.3em;
+    font-size: 1.4em;
+    margin: 10px 0 10px 0;
 }
+
+
 
 #search p {
     font-weight: 500;
-    font-size: 0.9em;
+    margin: 10px 0 10px 0;
 }
 
 a { 
@@ -49,7 +54,7 @@ a {
 }
 
 h2 {
-    font-size: 1.1em;
+    font-size: 1.3em;
     font-weight: 700;
     padding-right: 15px;
 }
@@ -79,19 +84,23 @@ h2 {
 #button_desktop {
     border-radius: 0 15px 15px 0;
      font-weight: 600;
+     font-size: 1.1em;
 
 }
 
 .fa-search { 
     color: white;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 .fa-map-marker-alt {
     background-color: #f2f2f2;
     padding: 18px; 
     border-radius: 15px 0 0 15px;
+    font-size: 1.2em;
 }
+
+
 
 #champ input {
     font-weight: 800;
@@ -108,7 +117,7 @@ h2 {
 
 
 
-#buttons_all {
+#buttons_filters {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -116,7 +125,7 @@ h2 {
 
 
 
-#buttons_all button {
+#buttons_filters button {
     background-color: white;
     border: solid 2px #d9d9d9;
     border-radius: 30px ;
@@ -138,8 +147,8 @@ h2 {
     align-items: center;
     margin-right: 10px;
     margin-left: -10px;
+    font-size: 1.4em;
 }
-
 
 
 #filters button:hover {
@@ -183,7 +192,7 @@ h2 {
 
 .fa-chart-line {
     font-weight: 800;
-    font-size: 1.3em;
+    font-size: 1.5em;
     color: black;
 }
 
@@ -193,11 +202,11 @@ h2 {
 
 .stars {
     color: #0065fc;
-    font-size: 0.7em;
+    font-size: 0.8em;
 }
 
 #popular .stars {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .stars .last { /*  dernière(s) étoile(s)*/
@@ -205,13 +214,12 @@ h2 {
 }
 
 h3 {
-    font-size: 0.9em;
     font-weight: 800;
     margin-top: 10px;
 }
 
 h4 {
-    font-size: 0.8em;
+    font-size: 0.9em;
     font-weight: 600;
 }
 
@@ -221,14 +229,14 @@ h4 {
     height: 140px;
 }
 
-#popular_cards {
+#popular_cards{
     padding: 0 30px 30px 30px;
 
 }
 
 .card {
     background-color: white;
-    margin: 10px 15px 10px 15px;
+    margin: 10px 10px 10px 10px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px 5px #e4e4e4;
     
@@ -238,7 +246,7 @@ h4 {
 
 #popular img { 
     width: 40%; 
-    height: 140px;
+    
     object-fit: cover;
     border-radius: 15px 0 0 15px;
 }
@@ -247,12 +255,19 @@ h4 {
 
 
 
-#housing h1,  #popular_title, #activities h1 {
-    padding: 30px 20px 20px 30px;
+ #activities h1 {
+    padding: 40px 20px 20px 20px;
 } 
+#housing h1{
+    padding:30px 20px 30px 20px;
+}
+
+#popular_title{
+    padding: 30px 40px 10px 40px;
+}
 
 #housing h2 {
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 #housing img { 
@@ -276,6 +291,7 @@ h4 {
 #housing h4, #housing h3, #housing .stars { 
     margin: 5px;
 }
+
 
 
 
@@ -304,7 +320,7 @@ h4 {
         display: none;
     }
 
-    #buttons_all button {
+    #buttons_filters button {
         margin: 5px;
     }
     
@@ -314,7 +330,7 @@ h4 {
     }
 
     .card {
-        width: 335px;
+        width: 350px;
     }
     #housing .card {
         width: 335px;
@@ -341,30 +357,30 @@ h4 {
 
 }
 
-@media all and (min-width: 720px) and (max-width: 1199px) { /* tablette*/
+@media all and (min-width: 720px) and (max-width: 1389px) { /* tablette*/
     
-   
+    #subheading{
+        margin-top: 30px;
+    }
 
     #search, #housing, #activities {
         margin: 0px 30px 0 30px; 
     }
     
-    #subheading {
-        margin-top: 20px;
-    }
+   
 
     #button_mobile {
         display: none;
     }
 
-    #buttons_all button {
+    #buttons_filters button {
         margin: 5px;
     }
     
     #filters {
         display: flex;
         align-items:baseline;
-        margin: 20px 0 20px 0;
+       
     }
 
     #info {
@@ -372,97 +388,65 @@ h4 {
         align-items: center;
     }
 
-    #popular_cards, #housing_cards, #activities_cards {
+    #activities_cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    #popular_cards, #housing_cards, #activities_cards{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
+        max-width: 800px;
     }
+    
+   #popular{
+    border-radius: 15px;
+   }
+
+    #popular .card {
+        width: 350px;
+    }
+
 
    
 
-    #popular .card {
+    #housing .card {
         width: 335px;
     }
-        #housing .card {
-            width: 250px;
-        }
 
 
-        #activities_cards .card{
 
-            width: 300px;
-        }
 
-            #activities_cards img{
-                border-radius: 15px 15px 0 0px;
-                width: 100%;
-                object-fit: cover;
-            }
-        #vieux_port, #calanques { /* se repete dans desktop*/
-            height: 445px;
-         
-        }
+    #activities_cards .card {
+        height: 190px;
+        margin-bottom: 30px;
+        width: 335px;
+    }
     
-        #vieux_port img, #calanques img {
-            height: 390px;  
-        }
-
-
-        #pomegues {
-            height: 235px;
-            
-        }
-
-        #pomegues img{
-            height: 180px;
-            
-        }
-
-        #frioul {
-            height: 165px;
-        }
-
-        #frioul img{
-            height: 110px;
-           
-        }
-
-        #notre_dame {
-            height:195px;
-        }
-
-        #notre_dame img{
-            height: 140px;
-        }
-
-        #longchamp {
-            height: 210px;
-        }
-
-        #longchamp img {
-            height: 150px;
-        }
-
-        #pomegues_frioul, #notre_dame_longchamp {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        
-        }
+    #activities img {
+        border-radius: 15px 15px 0 0px;
+        height: 135px;
+        width: 100%;
+        object-fit: cover;
+    }
         
 }
 
-@media all and (min-width: 1200px) { /* desktop, ajuster en fonction de mes élements*/
+@media all and (min-width: 1390px) { /* desktop, ajuster en fonction de mes élements*/
 
     #search, #activities, footer {
         margin: 0px 50px 0 50px; 
     }
 
-
-    #subheading {
-        margin-top: 20px;
+    #subheading{
+        margin-top: 30px;
     }
+   
 
 
     #container_housing {
@@ -475,14 +459,13 @@ h4 {
         display: none;
     }
 
-    #buttons_all button {
+    #buttons_filters button {
         margin: 15px;
     }
     
     #filters {
         display: flex;
         align-items:baseline;
-        margin: 20px 0 20px 0;
     }
 
     #info {
@@ -495,10 +478,17 @@ h4 {
         display: flex;   
     }
 
-    #housing_cards, #popular_cards {
+    #housing_cards {
         display: flex;
         flex-wrap: wrap;
         justify-content:space-evenly;
+    }
+
+    #popular_cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 
     #activities_cards {
@@ -511,8 +501,14 @@ h4 {
         background-color: #f2f2f2;
         border-radius: 15px;
         margin-right: 40px;
+    }
 
-       
+    #housing h1{
+        padding:30px 20px 10px 30px;
+    }
+
+    #housing h2{
+        padding-left: 30px;
     }
 
     #container_housing > #housing { /*change ordre*/
@@ -526,13 +522,13 @@ h4 {
 
 
     #popular .card { 
-        width: 340px;
+        width: 350px;
     }
 
     #housing .card {
         width: 250px;
-        
     }
+
 
     #activities_cards .card {
         width: 300px;
