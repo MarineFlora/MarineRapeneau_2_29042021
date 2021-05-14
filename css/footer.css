@@ -1,24 +1,3 @@
-/*.border { 
-    border: 3px solid black;
-    margin: 2px;
-} 
-
-.red {
-    border-color: red;
-}
-
-.blue {
-    border-color: blue;
-}
-
-.orange {
-    border-color: orange;
-}
-
-.purple {
-    border-color: purple;
-} */
-
 body {
     font-family: "Raleway", sans-serif;
 }
@@ -31,6 +10,7 @@ footer {
 
 footer ul {
     padding:0; 
+    font-weight: 500;
 }
 
 footer div {
@@ -45,12 +25,8 @@ footer li {
     padding-bottom: 15px;
 }
 
-@media all and (max-width:600px){ /* mobile */
 
-}
-
-
-@media all and (min-width: 601px) and (max-width: 991px) { /* tablette*/
+@media all and (min-width: 720px) and (max-width: 1389px) { /* tablette*/
 
     footer {
         display: flex;
@@ -60,13 +36,13 @@ footer li {
 
 }
 
-@media all and (min-width: 992px) { /* desktop*/
+
+@media all and (min-width: 1390px) { /* desktop*/
 
     footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-
 
 }

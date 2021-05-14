@@ -1,23 +1,14 @@
-/* .border { 
-    border: 3px solid black;
-    margin: 2px;
-} 
-
-.red {
-    border-color: red;
-}
-
-.blue {
-    border-color: blue;
-} */
-
 body {
 
     font-family: 'Raleway', sans-serif;
     margin: 0;
-    min-width:400px; 
+    min-width: 415px;
 }
 
+#container {
+    min-width:415px; 
+    max-width: 1500px;
+}
 
 #logo {
     margin: 10px 30px 10px 30px;
@@ -28,27 +19,25 @@ body {
     margin-right: 20px;
 }
 
-
-
 .navigation {
     font-weight: 600;
     font-size: 1.1em;
 }
 
 .navigation ul { 
-    display: flex; /* aligne la liste du nav */
+    display: flex; 
     justify-content: space-around; 
     align-items: center;
-    padding: 0; /* résout problème du padding de la liste par défaut*/
+    padding: 0; 
     margin-top: 30px;    
 }
 
  li { 
-    list-style: none;  /*enlève points liste */ 
+    list-style: none;  
 }
 
 a { 
-    text-decoration: none; /*enlève surlignage liens*/
+    text-decoration: none;
     color: black;  
 }
 
@@ -58,7 +47,7 @@ a {
     header {
         display: flex;
         justify-content: space-between;
-        align-items:flex-end; /*aligner sur base , pas au centre*/
+        align-items:flex-end; 
         }
 
     #logo {
@@ -68,7 +57,7 @@ a {
         }
 
     .navigation {
-        width: 100%;/* pour que contenu de nav prennet 50%*/
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -81,31 +70,32 @@ a {
     }
 
     .navigation li {
-        flex: 0.5; /* le a fait bien 0.5 en largeur et hauteur sans besoin de mettre un height à nav*/
+        flex: 0.5; 
         padding-bottom: 10px;   
         border-bottom: solid 3px #f2f2f2; 
         text-align: center;
     } 
   
-    .navigation li:hover { /*change apparence au survol*/
+    .navigation li:hover { 
         border-bottom: solid 3px #0065fc;
     }
 
-    .navigation a:hover { /*car color ne fonctionne juste sur li:hover*/
+    .navigation a:hover { 
         color: #0065fc;
     }
 
 }
 
-@media all and (min-width:720px) /* tablette et desktop*/
-{
+
+@media all and (min-width:720px) { /* tablette et desktop*/
+
     header {
         display: flex;
         justify-content: space-between;
         align-items: flex-end; 
     }
 
-    .navigation > #signUp {  /*flex box change l'ordre des élements "sinscrire doit se situer à la fin donc order3*/
+    .navigation > #signUp { 
         order: 3;
     }
 
@@ -115,17 +105,17 @@ a {
     }
 
     .navigation li {
-        flex: 0.5; /* pour que ancre tiennent 50% de la place du nav*/
-        padding: 25px 15px 0 15px; /*si j'enlève le padding les boite li et a font la même hauteur tout ok*/  
+        flex: 0.5; 
+        padding: 25px 15px 0 15px;  
         border-top: solid 3px white; 
         text-align: center;  
     } 
 
-    .navigation li:hover { /*change apparence au survol*/
+    .navigation li:hover { 
         border-top: solid 3px #0065fc;
     }
 
-   .navigation a:hover { /*car color ne fonctionne juste sur li:hover*/
+   .navigation a:hover { 
         color: #0065fc;
     }
     
@@ -133,13 +123,13 @@ a {
         padding: 25px 15px 0 15px;
     }
 
-    @media all and (min-width: 1200px) { /* desktop*/
+}
 
-        #logo {
-            margin-left: 50px;
-        }
-    
-    
+
+@media all and (min-width: 1390px) { /* desktop*/
+
+    #logo {
+        margin-left: 50px;
     }
 
 }
