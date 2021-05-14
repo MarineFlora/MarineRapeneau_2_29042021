@@ -53,7 +53,7 @@ a {
 }
 
 
-@media all and (max-width:700px) { /*mobile */
+@media all and (max-width:719px) { /*mobile */
 
     header {
         display: flex;
@@ -97,7 +97,7 @@ a {
 
 }
 
-@media all and (min-width:701px) /* tablette et desktop*/
+@media all and (min-width:720px) /* tablette et desktop*/
 {
     header {
         display: flex;
@@ -133,7 +133,7 @@ a {
         padding: 25px 15px 0 15px;
     }
 
-    @media all and (min-width: 992px) { /* desktop*/
+    @media all and (min-width: 1200px) { /* desktop*/
 
         #logo {
             margin-left: 50px;
