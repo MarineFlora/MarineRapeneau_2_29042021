@@ -1,47 +1,15 @@
-/*.border { 
-    border: 1px solid black;
-    margin: 0px;
-} 
-
-.red {
-    border-color: red;
-}
-
-.blue {
-    border-color: blue;
-}
-
-.orange {
-    border-color: orange;
-}
-
-.purple {
-    border-color: purple;
-} */
-
 body{
     margin: 0;
     font-family: "Raleway", sans-serif;
     display: flex;
     justify-content: center;
-  
-   
 }
 
-#container {
-    min-width:415px; 
-    max-width: 1500px; /* pb page non centrée*/
-}
-
-
- 
  h1 {
     font-weight: 800;
     font-size: 1.4em;
     margin: 10px 0 10px 0;
 }
-
-
 
 #search p {
     font-weight: 500;
@@ -49,7 +17,7 @@ body{
 }
 
 a { 
-    text-decoration: none; /*enlève surlignage liens*/
+    text-decoration: none; 
     color: black;  
 }
 
@@ -59,9 +27,8 @@ h2 {
     padding-right: 15px;
 }
 
+
 /* -----------------  champ de recherche --------------------- */
-
-
 
 #champ {
     display: flex;
@@ -85,7 +52,6 @@ h2 {
     border-radius: 0 15px 15px 0;
      font-weight: 600;
      font-size: 1.1em;
-
 }
 
 .fa-search { 
@@ -100,8 +66,6 @@ h2 {
     font-size: 1.2em;
 }
 
-
-
 #champ input {
     font-weight: 800;
     font-size: 1.2em;
@@ -115,15 +79,11 @@ h2 {
 
 /* -------------- Filters ----------------- */
 
-
-
 #buttons_filters {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
-
-
 
 #buttons_filters button {
     background-color: white;
@@ -150,11 +110,11 @@ h2 {
     font-size: 1.4em;
 }
 
-
 #filters button:hover {
     background-color: #0065fc;
     color: white;
 }
+
 
 /* -------------- info -----------*/
 
@@ -174,6 +134,7 @@ h2 {
     text-align: center;
 }
 
+
 /* ----------------- CARDS LES PLUS POPULAIRES -------------- */
 
 #popular {
@@ -187,7 +148,6 @@ h2 {
     justify-content: space-between;
     align-items: center;
     color: black;
-
 }
 
 .fa-chart-line {
@@ -214,12 +174,13 @@ h2 {
 }
 
 h3 {
-    font-weight: 800;
+    font-size:0.9em;
+    font-weight: 700;
     margin-top: 10px;
 }
 
 h4 {
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-weight: 600;
 }
 
@@ -239,25 +200,21 @@ h4 {
     margin: 10px 10px 10px 10px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px 5px #e4e4e4;
-    
 }
-
-
 
 #popular img { 
     width: 40%; 
-    
     object-fit: cover;
     border-radius: 15px 0 0 15px;
 }
 
+
 /*----------------------------- hebergement Marseille -----------------*/
-
-
 
  #activities h1 {
     padding: 40px 20px 20px 20px;
 } 
+
 #housing h1{
     padding:30px 20px 30px 20px;
 }
@@ -271,7 +228,7 @@ h4 {
 }
 
 #housing img { 
-    height: 115px; /* fonctionne mais en responsive après image trop large par rapport à taille...*/ 
+    height: 115px; 
     object-fit: cover;
     border-radius: 15px 15px 0 0px;
 }
@@ -281,7 +238,6 @@ h4 {
   flex-direction: column;
   justify-content: center;
   padding: 5px;
-  
 }
 
 #housing .hotel_details  {
@@ -293,10 +249,7 @@ h4 {
 }
 
 
-
-
-
-/* --------- ACT -------*/
+/* --------- ACTIVITES -------*/
 
 #activities {
     padding-bottom: 50px;
@@ -307,14 +260,11 @@ h4 {
     margin:0; 
 }
 
-@media all and (max-width:719px){ /* mobile ajuster à 700px car activités probleme placement*/
-
-    
+@media all and (max-width:719px){ /* mobile ajusté en fonction de mes élements mais suivi breakpoints W3schools comme base*/ 
 
     #search, #housing, #activities, footer{
         margin: 0px 20px 0 20px; 
     }
-
    
     #button_desktop {
         display: none;
@@ -336,6 +286,7 @@ h4 {
         width: 335px;
         
     }
+
     #popular_cards, #housing_cards, #activities_cards {
         padding-bottom: 20px;
         display: flex;
@@ -357,6 +308,7 @@ h4 {
 
 }
 
+
 @media all and (min-width: 720px) and (max-width: 1389px) { /* tablette*/
     
     #subheading{
@@ -367,8 +319,6 @@ h4 {
         margin: 0px 30px 0 30px; 
     }
     
-   
-
     #button_mobile {
         display: none;
     }
@@ -380,7 +330,6 @@ h4 {
     #filters {
         display: flex;
         align-items:baseline;
-       
     }
 
     #info {
@@ -411,16 +360,10 @@ h4 {
     #popular .card {
         width: 350px;
     }
-
-
    
-
     #housing .card {
         width: 335px;
     }
-
-
-
 
     #activities_cards .card {
         height: 190px;
@@ -437,7 +380,8 @@ h4 {
         
 }
 
-@media all and (min-width: 1390px) { /* desktop, ajuster en fonction de mes élements*/
+
+@media all and (min-width: 1390px) { /* desktop*/
 
     #search, #activities, footer {
         margin: 0px 50px 0 50px; 
@@ -446,14 +390,10 @@ h4 {
     #subheading{
         margin-top: 30px;
     }
-   
-
 
     #container_housing {
         margin: 0 50px 0 50px;
     }
-
-  
 
     #button_mobile {
         display: none;
@@ -473,8 +413,7 @@ h4 {
         align-items: center;
     }
    
-   
-    #container_housing { /* met hebergement marseille a coté de populaires */
+    #container_housing { 
         display: flex;   
     }
 
@@ -511,7 +450,7 @@ h4 {
         padding-left: 30px;
     }
 
-    #container_housing > #housing { /*change ordre*/
+    #container_housing > #housing {
         order: -1;
     }
 
@@ -520,7 +459,6 @@ h4 {
         border-radius: 15px;
     }
 
-
     #popular .card { 
         width: 350px;
     }
@@ -528,7 +466,6 @@ h4 {
     #housing .card {
         width: 250px;
     }
-
 
     #activities_cards .card {
         width: 300px;
@@ -539,9 +476,7 @@ h4 {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-    
     }
-
 
     #activities_cards img{
         border-radius: 15px 15px 0 0px;
@@ -549,24 +484,20 @@ h4 {
         object-fit: cover;
     }
 
-    #vieux_port, #calanques { /* se repete dans tablette*/
+    #vieux_port, #calanques {
         height: 445px;
-     
     }
 
     #vieux_port img, #calanques img {
         height: 390px;  
     }
 
-
     #pomegues {
-        height: 235px;
-        
+        height: 235px; 
     }
 
     #pomegues img{
         height: 180px;
-        
     }
 
     #frioul {
@@ -575,7 +506,6 @@ h4 {
 
     #frioul img{
         height: 110px;
-       
     }
 
     #notre_dame {
