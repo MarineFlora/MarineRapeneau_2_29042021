@@ -28,7 +28,7 @@ h2 {
 }
 
 
-/* -----------------  champ de recherche --------------------- */
+/*----------------- champ de recherche -----------------*/
 
 #champ {
     display: flex;
@@ -50,8 +50,8 @@ h2 {
 
 #button_desktop {
     border-radius: 0 15px 15px 0;
-     font-weight: 600;
-     font-size: 1.1em;
+    font-weight: 600;
+    font-size: 1.0em;
 }
 
 .fa-search { 
@@ -66,18 +66,18 @@ h2 {
     font-size: 1.2em;
 }
 
-#champ input {
+#location {
     font-weight: 800;
     font-size: 1.2em;
     font-family: "Raleway", sans-serif;
     padding: 15px 0 15px 15px;
     border: solid #f2f2f2 thin;
     margin: 0;  
-    width: 220px;
+    width: 245px;
 }
 
 
-/* -------------- Filters ----------------- */
+/*----------------- Filters -----------------*/
 
 #buttons_filters {
     display: flex;
@@ -99,7 +99,7 @@ h2 {
 #filters i { 
     color: #0065fc;
     background-color: #deebff ;
-    height: 45px; /* change taille du background color */
+    height: 45px;
     width: 45px;
     border-radius: 30px;
     display: flex;
@@ -116,13 +116,13 @@ h2 {
 }
 
 
-/* -------------- info -----------*/
+/*----------------- info -----------------*/
 
 #info {
     margin: 10px 0 20px 0;
 }
 
-#info i { /* pb: l'icone i n'est pas centrée dans le cercle */
+#info i { 
     color:#0065fc;
     border:solid 1px #d9d9d9;
     padding: 5px;
@@ -135,11 +135,11 @@ h2 {
 }
 
 
-/* ----------------- CARDS LES PLUS POPULAIRES -------------- */
+/*----------------- LES PLUS POPULAIRES -----------------*/
 
 #popular {
     background-color:#f2f2f2; 
-    display: flex; /*est-ce utile? */
+    display: flex; 
     flex-direction: column;
 }
 
@@ -157,7 +157,7 @@ h2 {
 }
 
 #popular .hotel_details  {
-    margin: 0 20px 5px 20px;
+    margin: 5px 20px 5px 20px;
 }
 
 .stars {
@@ -166,10 +166,10 @@ h2 {
 }
 
 #popular .stars {
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
-.stars .last { /*  dernière(s) étoile(s)*/
+.stars .last {
     color:#f2f2f2;
 }
 
@@ -179,9 +179,20 @@ h3 {
     margin-top: 10px;
 }
 
+#popular h3{
+    padding-right: 5px;
+}
+
 h4 {
     font-size: 0.8em;
     font-weight: 600;
+}
+
+.card {
+    background-color: white;
+    margin: 10px 10px 10px 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 5px #e4e4e4;
 }
 
 #popular_cards .card {
@@ -192,14 +203,6 @@ h4 {
 
 #popular_cards{
     padding: 0 30px 30px 30px;
-
-}
-
-.card {
-    background-color: white;
-    margin: 10px 10px 10px 10px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px 5px #e4e4e4;
 }
 
 #popular img { 
@@ -208,19 +211,18 @@ h4 {
     border-radius: 15px 0 0 15px;
 }
 
+#popular_title{
+    padding: 30px 40px 10px 40px;
+}
 
-/*----------------------------- hebergement Marseille -----------------*/
+/*----------------- hebergement Marseille -----------------*/
 
- #activities h1 {
+#activities h1 {
     padding: 40px 20px 20px 20px;
 } 
 
 #housing h1{
     padding:30px 20px 30px 20px;
-}
-
-#popular_title{
-    padding: 30px 40px 10px 40px;
 }
 
 #housing h2 {
@@ -241,15 +243,15 @@ h4 {
 }
 
 #housing .hotel_details  {
-    margin: 5px ;
-}
-
-#housing h4, #housing h3, #housing .stars { 
     margin: 5px;
 }
 
+#housing h4, #housing h3, #housing .stars { 
+    margin: 7px;
+}
 
-/* --------- ACTIVITES -------*/
+
+/*----------------- ACTIVITES -----------------*/
 
 #activities {
     padding-bottom: 50px;
@@ -260,7 +262,7 @@ h4 {
     margin:0; 
 }
 
-@media all and (max-width:719px){ /* mobile ajusté en fonction de mes élements mais suivi breakpoints W3schools comme base*/ 
+@media all and (max-width:719px){ /* mobile */ 
 
     #search, #housing, #activities, footer{
         margin: 0px 20px 0 20px; 
@@ -282,6 +284,7 @@ h4 {
     .card {
         width: 350px;
     }
+    
     #housing .card {
         width: 335px;
         
@@ -337,27 +340,15 @@ h4 {
         align-items: center;
     }
 
-    #activities_cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
     #popular_cards, #housing_cards, #activities_cards{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
     }
-    
-   #popular{
-    border-radius: 15px;
-   }
 
     #popular .card {
-        width: 350px;
+        width: 345px;
     }
    
     #housing .card {
@@ -382,8 +373,6 @@ h4 {
 
 @media all and (min-width: 1390px) { /* desktop*/
 
-    
-
     header, #search, #container_housing, #activities{
         margin: 0px 50px 0 50px; 
     } 
@@ -391,8 +380,6 @@ h4 {
     #subheading{
         margin-top: 30px;
     }
-
-   
 
     #button_mobile {
         display: none;
@@ -430,13 +417,12 @@ h4 {
         flex-wrap: wrap;
     }
 
-   
 
     #housing {
         background-color: #f2f2f2;
         border-radius: 15px;
         margin-right: 2.9%;
-        width: 73%;
+        width: 70%;
     }
 
     #housing h1{
@@ -457,7 +443,17 @@ h4 {
     }
 
     #popular .card { 
-        width: 350px;
+        width: 345px;
+    }
+
+    #popular img { 
+        width: 43%; 
+        object-fit: cover;
+        border-radius: 15px 0 0 15px;
+    }
+
+    #popular h3{
+        padding-right: 0;
     }
 
     #housing .card {
@@ -468,23 +464,22 @@ h4 {
         width: 300px;
         margin:0;
     }
-    
-   #activities_cards{
+
+    /* ------------------- GRID ------------------- */
+    #activities_cards{
        display: grid;
        grid-template-columns: repeat(4, 300px);
-       grid-template-rows: repeat(2, 223px );
+       grid-template-rows: repeat(2, 223px);
        grid-template-areas: "a b d e" "a c d f";
-    grid-gap: 0 45px;
+       grid-gap: 0 45px;
    }
     
    #vieux_port{
        grid-area : a;
-    
    }
 
    #pomegues{
-       grid-area: b;
-       
+       grid-area: b;  
    }
    
    #frioul{
@@ -493,20 +488,19 @@ h4 {
    }
 
    #calanques {
-       grid-area: d;
-      
+       grid-area: d; 
    }
 
    #notre_dame {
-       grid-area: e;
-       
+       grid-area: e;  
    }
 
    #longchamp {
        grid-area: f;
        align-self: end;
-       
    }
+
+   /* -------------*/
 
     #activities_cards img{
         border-radius: 15px 15px 0 0px;
