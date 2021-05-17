@@ -350,7 +350,6 @@ h4 {
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
-        max-width: 800px;
     }
     
    #popular{
@@ -383,17 +382,17 @@ h4 {
 
 @media all and (min-width: 1390px) { /* desktop*/
 
-    #search, #activities, footer {
+    
+
+    header, #search, #container_housing, #activities{
         margin: 0px 50px 0 50px; 
-    }
+    } 
 
     #subheading{
         margin-top: 30px;
     }
 
-    #container_housing {
-        margin: 0 50px 0 50px;
-    }
+   
 
     #button_mobile {
         display: none;
@@ -414,13 +413,14 @@ h4 {
     }
    
     #container_housing { 
-        display: flex;   
+        display: flex; 
+        justify-content: space-between;  
     }
 
     #housing_cards {
         display: flex;
         flex-wrap: wrap;
-        justify-content:space-evenly;
+        justify-content:center;
     }
 
     #popular_cards{
@@ -435,7 +435,8 @@ h4 {
     #housing {
         background-color: #f2f2f2;
         border-radius: 15px;
-        margin-right: 40px;
+        margin-right: 2.9%;
+        width: 73%;
     }
 
     #housing h1{
@@ -451,7 +452,7 @@ h4 {
     }
 
     #popular {
-        width: 35%;
+        width: 30%;
         border-radius: 15px;
     }
 
@@ -473,7 +474,7 @@ h4 {
        grid-template-columns: repeat(4, 300px);
        grid-template-rows: repeat(2, 223px );
        grid-template-areas: "a b d e" "a c d f";
-    grid-gap: 0 40px;
+    grid-gap: 0 45px;
    }
     
    #vieux_port{
