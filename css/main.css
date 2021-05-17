@@ -350,7 +350,6 @@ h4 {
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
-        max-width: 800px;
     }
     
    #popular{
@@ -383,17 +382,17 @@ h4 {
 
 @media all and (min-width: 1390px) { /* desktop*/
 
-    #search, #activities, footer {
+    
+
+    header, #search, #container_housing, #activities{
         margin: 0px 50px 0 50px; 
-    }
+    } 
 
     #subheading{
         margin-top: 30px;
     }
 
-    #container_housing {
-        margin: 0 50px 0 50px;
-    }
+   
 
     #button_mobile {
         display: none;
@@ -414,13 +413,14 @@ h4 {
     }
    
     #container_housing { 
-        display: flex;   
+        display: flex; 
+        justify-content: space-between;  
     }
 
     #housing_cards {
         display: flex;
         flex-wrap: wrap;
-        justify-content:space-evenly;
+        justify-content:center;
     }
 
     #popular_cards{
@@ -430,16 +430,13 @@ h4 {
         flex-wrap: wrap;
     }
 
-    #activities_cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+   
 
     #housing {
         background-color: #f2f2f2;
         border-radius: 15px;
-        margin-right: 40px;
+        margin-right: 2.9%;
+        width: 73%;
     }
 
     #housing h1{
@@ -455,7 +452,7 @@ h4 {
     }
 
     #popular {
-        width: 35%;
+        width: 30%;
         border-radius: 15px;
     }
 
@@ -469,14 +466,47 @@ h4 {
 
     #activities_cards .card {
         width: 300px;
-        margin: 10px;
+        margin:0;
     }
     
-    #pomegues_frioul, #notre_dame_longchamp {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+   #activities_cards{
+       display: grid;
+       grid-template-columns: repeat(4, 300px);
+       grid-template-rows: repeat(2, 223px );
+       grid-template-areas: "a b d e" "a c d f";
+    grid-gap: 0 45px;
+   }
+    
+   #vieux_port{
+       grid-area : a;
+    
+   }
+
+   #pomegues{
+       grid-area: b;
+       
+   }
+   
+   #frioul{
+       grid-area: c;
+       align-self: end;
+   }
+
+   #calanques {
+       grid-area: d;
+      
+   }
+
+   #notre_dame {
+       grid-area: e;
+       
+   }
+
+   #longchamp {
+       grid-area: f;
+       align-self: end;
+       
+   }
 
     #activities_cards img{
         border-radius: 15px 15px 0 0px;
@@ -521,7 +551,7 @@ h4 {
     }
 
     #longchamp img {
-        height: 150px;
+        height: 155px;
     }
 
 
