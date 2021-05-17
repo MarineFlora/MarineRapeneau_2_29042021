@@ -1,11 +1,9 @@
 body{
-    margin: 0;
-    font-family: "Raleway", sans-serif;
     display: flex;
     justify-content: center;
 }
 
- h1 {
+h1 {
     font-weight: 800;
     font-size: 1.4em;
     margin: 10px 0 10px 0;
@@ -28,7 +26,7 @@ h2 {
 }
 
 
-/*----------------- champ de recherche -----------------*/
+/*----------------- SEARCH CHAMP DE RECHERCHE global -----------------*/
 
 #champ {
     display: flex;
@@ -81,8 +79,7 @@ h2 {
     color: black;
 }
 
-
-/*----------------- Filters -----------------*/
+/*----------------- SEARCH FILTERS global -----------------*/
 
 #buttons_filters {
     display: flex;
@@ -125,8 +122,7 @@ h2 {
     color: white;
 }
 
-
-/*----------------- info -----------------*/
+/*----------------- SEARCH INFO global -----------------*/
 
 #info {
     margin: 10px 0 20px 0;
@@ -144,39 +140,11 @@ h2 {
     text-align: center;
 }
 
-
-/*----------------- LES PLUS POPULAIRES -----------------*/
-
-#popular {
-    background-color:#f2f2f2; 
-    display: flex; 
-    flex-direction: column;
-}
-
-#popular_title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: black;
-}
-
-.fa-chart-line {
-    font-weight: 800;
-    font-size: 1.5em;
-    color: black;
-}
-
-#popular .hotel_details  {
-    margin: 5px 20px 5px 20px;
-}
+/*----------------- HOUSING global -----------------*/
 
 .stars {
     color: #0065fc;
     font-size: 0.8em;
-}
-
-#popular .stars {
-    margin-top: 40px;
 }
 
 .stars .last {
@@ -189,10 +157,6 @@ h3 {
     margin-top: 10px;
 }
 
-#popular h3{
-    padding-right: 5px;
-}
-
 h4 {
     font-size: 0.8em;
     font-weight: 600;
@@ -203,6 +167,28 @@ h4 {
     margin: 10px 10px 10px 10px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px 5px #e4e4e4;
+}
+
+/*----------------- POPULAR global -----------------*/
+
+#popular {
+    background-color:#f2f2f2; 
+    display: flex; 
+    flex-direction: column;
+}
+
+#popular_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    padding: 30px 40px 10px 40px;
+}
+
+.fa-chart-line {
+    font-weight: 800;
+    font-size: 1.5em;
+    color: black;
 }
 
 #popular_cards .card {
@@ -221,15 +207,19 @@ h4 {
     border-radius: 15px 0 0 15px;
 }
 
-#popular_title{
-    padding: 30px 40px 10px 40px;
+#popular .hotel_details  {
+    margin: 5px 20px 5px 20px;
 }
 
-/*----------------- hebergement Marseille -----------------*/
+#popular h3{
+    padding-right: 5px;
+}
 
-#activities h1 {
-    padding: 40px 20px 20px 20px;
-} 
+#popular .stars {
+    margin-top: 40px;
+}
+
+/*----------------- HOUSING MARSEILLE global -----------------*/
 
 #housing h1{
     padding:30px 20px 30px 20px;
@@ -261,23 +251,30 @@ h4 {
 }
 
 
-/*----------------- ACTIVITES -----------------*/
+/*----------------- ACTIVITIES global -----------------*/
 
 #activities {
     padding-bottom: 50px;
 }
+
+#activities h1 {
+    padding: 40px 20px 20px 20px;
+} 
 
 #activities h3 {
     padding: 15px;
     margin:0; 
 }
 
-@media all and (max-width:719px){ /* mobile */ 
+
+@media all and (max-width:770px){ /* mobile */ 
 
     #search, #housing, #activities, footer{
         margin: 0px 20px 0 20px; 
     }
    
+    /*------------------- MOBILE SEARCH -------------------*/
+
     #button_desktop {
         display: none;
     }
@@ -291,13 +288,14 @@ h4 {
         align-items: baseline;
     }
 
+    /*------------------- MOBILE CARDS -------------------*/
+
     .card {
         width: 350px;
     }
-    
+
     #housing .card {
         width: 335px;
-        
     }
 
     #popular_cards, #housing_cards, #activities_cards {
@@ -306,6 +304,8 @@ h4 {
         flex-direction: column;
         align-items: center;
     }
+
+    /*------------------- MOBILE ACTIVITIES FORMATS -------------------*/
 
     #activities_cards .card {
         height: 190px;
@@ -322,7 +322,7 @@ h4 {
 }
 
 
-@media all and (min-width: 720px) and (max-width: 1389px) { /* tablette*/
+@media all and (min-width: 770px) and (max-width: 1390px) { /* tablette*/
     
     #subheading{
         margin-top: 30px;
@@ -331,6 +331,8 @@ h4 {
     #search, #housing, #activities {
         margin: 0px 30px 0 30px; 
     }
+
+    /*------------------- TABLETTE SEARCH -------------------*/
     
     #button_mobile {
         display: none;
@@ -350,6 +352,8 @@ h4 {
         align-items: center;
     }
 
+    /*------------------- TABLETTE HOUSING -------------------*/
+
     #popular_cards, #housing_cards, #activities_cards{
         display: flex;
         flex-direction: row;
@@ -365,14 +369,16 @@ h4 {
         width: 335px;
     }
 
+    /*------------------- TABLETTE ACTIVITIES FORMATS -------------------*/
+
     #activities_cards .card {
         height: 190px;
-        margin-bottom: 30px;
         width: 335px;
+        margin-bottom: 30px;
     }
     
     #activities img {
-        border-radius: 15px 15px 0 0px;
+        border-radius: 15px 15px 0 0;
         height: 135px;
         width: 100%;
         object-fit: cover;
@@ -390,6 +396,8 @@ h4 {
     #subheading{
         margin-top: 30px;
     }
+
+    /*------------------- DESKTOP SEARCH -------------------*/
 
     #button_mobile {
         display: none;
@@ -409,24 +417,14 @@ h4 {
         align-items: center;
     }
    
+    /*------------------- DESKTOP HOUSING -------------------*/
+
     #container_housing { 
         display: flex; 
         justify-content: space-between;  
     }
 
-    #housing_cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content:center;
-    }
-
-    #popular_cards{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-
+    /*------------------- DESKTOP HOUSING MARSEILLE -------------------*/
 
     #housing {
         background-color: #f2f2f2;
@@ -435,11 +433,21 @@ h4 {
         width: 70%;
     }
 
-    #housing h1{
+    #housing_cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+
+    #housing .card {
+        width: 250px;
+    }
+
+    #housing h1 {
         padding: 30px 40px 10px 40px;
     }
 
-    #housing h2{
+    #housing h2 {
         padding-left: 40px;
     }
 
@@ -447,9 +455,18 @@ h4 {
         order: -1;
     }
 
+    /*------------------- DESKTOP POPULAR -------------------*/
+
     #popular {
         width: 30%;
         border-radius: 15px;
+    }
+
+    #popular_cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 
     #popular .card { 
@@ -466,59 +483,19 @@ h4 {
         padding-right: 0;
     }
 
-    #housing .card {
-        width: 250px;
-    }
+    /*------------------- DESKTOP ACTIVITES FORMATS -------------------*/
 
     #activities_cards .card {
         width: 300px;
-        margin:0;
+        margin: 0;
     }
 
     #activities h1 {
         padding: 40px 20px 20px 0;
     }
-   
-
-    /* ------------------- GRID ------------------- */
-    #activities_cards{
-       display: grid;
-       grid-template-columns: repeat(4, 300px);
-       grid-template-rows: repeat(2, 223px);
-       grid-template-areas: "a b d e" "a c d f";
-       grid-gap: 0 45px;
-   }
-    
-   #vieux_port{
-       grid-area : a;
-   }
-
-   #pomegues{
-       grid-area: b;  
-   }
-   
-   #frioul{
-       grid-area: c;
-       align-self: end;
-   }
-
-   #calanques {
-       grid-area: d; 
-   }
-
-   #notre_dame {
-       grid-area: e;  
-   }
-
-   #longchamp {
-       grid-area: f;
-       align-self: end;
-   }
-
-   /* -------------*/
 
     #activities_cards img{
-        border-radius: 15px 15px 0 0px;
+        border-radius: 15px 15px 0 0;
         width: 100%;
         object-fit: cover;
     }
@@ -563,5 +540,40 @@ h4 {
         height: 155px;
     }
 
+    /*------------------- DESKTOP GRID ACTIVITES -------------------*/
+
+    #activities_cards{
+       display: grid;
+       grid-template-columns: repeat(4, 300px);
+       grid-template-rows: repeat(2, 223px);
+       grid-template-areas: "a b d e" "a c d f";
+       grid-gap: 0 45px;
+   }
+    
+    #vieux_port{
+       grid-area : a;
+    }
+
+    #pomegues{
+       grid-area: b;  
+    }
+   
+    #frioul{
+       grid-area: c;
+       align-self: end;
+    }
+
+    #calanques {
+       grid-area: d; 
+    }
+
+    #notre_dame {
+       grid-area: e;  
+    }
+
+    #longchamp {
+       grid-area: f;
+       align-self: end;
+    }
 
 }
