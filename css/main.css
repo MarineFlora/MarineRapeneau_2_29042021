@@ -101,6 +101,11 @@ h2 {
     align-items: center;
 }
 
+.filter_title {
+    font-size: 1.3em;
+    font-weight: 700;
+    padding-right: 15px;
+}
 #filters i { 
     color: #0065fc;
     background-color: #deebff ;
