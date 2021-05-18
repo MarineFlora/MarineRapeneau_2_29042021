@@ -1,20 +1,19 @@
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
-    min-width: 415px;
 }
 
 #container {
     max-width: 1440px;
 }
 
-#logo {
-    margin: 10px 30px 10px 30px;
-}
+/*#logo {
+    margin: 10px 20px 10px 20px; /* vraiment utile??? juste besoin de positionnner correctement en abosulte?
+} */
 
 #signUp {
     color:#0065fc;
-    margin-right: 20px;
+   /* margin-right: 20px;*/
 }
 
 .navigation {
@@ -51,8 +50,8 @@ a {
 
    #logo {
         position: absolute;
-        top:5px;   
-        left: 5px;
+        top: 15px;   /*avant, avec margin en plus + haut : top:5px left: 5px*/
+        left: 25px;
     }
 
     .navigation {

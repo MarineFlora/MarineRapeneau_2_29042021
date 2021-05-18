@@ -9,10 +9,10 @@ h1 {
     margin: 10px 0 10px 0;
 }
 
-#search p {
+/*#search p {
     font-weight: 500;
-    margin: 10px 0 10px 0;
-}
+    margin: 10px;
+}*/
 
 a { 
     text-decoration: none; 
@@ -91,7 +91,6 @@ h2 {
     background-color: white;
     border: solid 2px #d9d9d9;
     border-radius: 30px ;
-    padding-right: 5px;
     height: 45px;
     display: flex;
     justify-content: center;
@@ -164,7 +163,7 @@ h4 {
 
 .card {
     background-color: white;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 0px 10px 0px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px 5px #e4e4e4;
 }
@@ -182,7 +181,7 @@ h4 {
     justify-content: space-between;
     align-items: center;
     color: black;
-    padding: 30px 40px 10px 40px;
+    /*padding: 30px 40px 10px 40px;*/
 }
 
 .fa-chart-line {
@@ -197,9 +196,10 @@ h4 {
     height: 140px;
 }
 
-#popular_cards{
+/*#popular_cards{
     padding: 0 30px 30px 30px;
 }
+*/
 
 #popular img { 
     width: 40%; 
@@ -211,9 +211,9 @@ h4 {
     margin: 5px 20px 5px 20px;
 }
 
-#popular h3{
-    padding-right: 5px;
-}
+/*#popular h3{
+    padding-right: 10px;
+}*/
 
 #popular .stars {
     margin-top: 40px;
@@ -222,12 +222,12 @@ h4 {
 /*----------------- HOUSING MARSEILLE global -----------------*/
 
 #housing h1{
-    padding:30px 20px 30px 20px;
+    padding:30px 0px 30px 0px; /* avant 30 20 30 20*/
 }
 
-#housing h2 {
+/*#housing h2 {
     padding-left: 20px;
-}
+}*/
 
 #housing img { 
     height: 115px; 
@@ -258,7 +258,7 @@ h4 {
 }
 
 #activities h1 {
-    padding: 40px 20px 20px 20px;
+    padding: 40px 0px 20px 0px; /* avant 40 20 20 20*/
 } 
 
 #activities h3 {
@@ -269,9 +269,13 @@ h4 {
 
 @media all and (max-width:770px){ /* mobile */ 
 
-    #search, #housing, #activities, footer{
-        margin: 0px 30px 0 30px; 
-    }
+    /*#search, #housing, #activities, footer{
+        margin: 0px 20px 0 20px; 
+    }*/
+
+    /*#popular{
+        padding: 0 20px 0 20px;
+    }*/
    
     /*------------------- MOBILE SEARCH -------------------*/
 
@@ -280,7 +284,7 @@ h4 {
     }
 
     #buttons_filters button {
-        margin: 5px;
+        margin: 5px 5px 5px 0px; /*avant juste 5px*/
     }
     
     #info {
@@ -291,12 +295,9 @@ h4 {
     /*------------------- MOBILE CARDS -------------------*/
 
     .card {
-        width: 350px;
-    }
-
-    #housing .card {
         width: 335px;
     }
+
 
     #popular_cards, #housing_cards, #activities_cards {
         padding-bottom: 20px;
