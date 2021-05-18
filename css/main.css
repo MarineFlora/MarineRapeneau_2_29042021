@@ -270,7 +270,7 @@ h4 {
 @media all and (max-width:770px){ /* mobile */ 
 
     #search, #housing, #activities, footer{
-        margin: 0px 20px 0 20px; 
+        margin: 0px 30px 0 30px; 
     }
    
     /*------------------- MOBILE SEARCH -------------------*/
