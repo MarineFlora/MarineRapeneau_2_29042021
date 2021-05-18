@@ -1,20 +1,19 @@
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
-    min-width: 415px;
 }
 
 #container {
     max-width: 1440px;
 }
 
-#logo {
-    margin: 10px 30px 10px 30px;
-}
+/*#logo {
+    margin: 10px 20px 10px 20px; /* vraiment utile??? juste besoin de positionnner correctement en abosulte?
+} */
 
 #signUp {
     color:#0065fc;
-    margin-right: 20px;
+   /* margin-right: 20px;*/
 }
 
 .navigation {
@@ -27,7 +26,7 @@ body {
     justify-content: space-around; 
     align-items: center;
     padding: 0; 
-    margin-top: 30px;    
+    margin: 30px 0 0 0;    
 }
 
  li { 
@@ -51,8 +50,8 @@ a {
 
    #logo {
         position: absolute;
-        top:5px;   
-        left: 5px;
+        top: 15px;   /*avant, avec margin en plus + haut : top:5px left: 5px*/
+        left: 25px;
     }
 
     .navigation {
@@ -90,10 +89,17 @@ a {
 
     header {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: flex-end; 
+        padding: 0 5% 0 5%;
+        position: relative;
     }
 
+    #logo {
+        position: absolute;
+        top: 45px;   /*avant, avec margin en plus + haut : top:5px left: 5px*/
+        left: 25px;
+    }
     .navigation > #signUp { 
         order: 3;
     }
@@ -101,6 +107,7 @@ a {
     .navigation {
         display: flex;
         align-items: baseline;
+
     }
 
     .navigation li {
@@ -119,8 +126,10 @@ a {
     }
     
     #signUp {
-        padding: 25px 15px 0 15px;
+        padding: 25px 0 0 15px;
     }
+
+    
 
 }
 
@@ -131,4 +140,14 @@ a {
         margin-left: 0;
     }
 
+    header{
+        position: relative;
+        padding:0;
+    }
+
+    #logo {
+        position: absolute;
+        top: 45px;   
+        left: 0px;
+    }
 }

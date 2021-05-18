@@ -6,13 +6,18 @@ body{
 h1 {
     font-weight: 800;
     font-size: 1.4em;
-    margin: 10px 0 10px 0;
+    padding-top: 40px;
+    margin: 0;
 }
 
-#search p {
-    font-weight: 500;
-    margin: 10px 0 10px 0;
+#popular_title, #housing h1, #activities h1{
+    padding-bottom: 25px;
 }
+
+/*#search p {
+    font-weight: 500;
+    margin: 10px;
+}*/
 
 a { 
     text-decoration: none; 
@@ -26,10 +31,12 @@ h2 {
 }
 
 
+
 /*----------------- SEARCH CHAMP DE RECHERCHE global -----------------*/
 
 #champ {
     display: flex;
+    justify-content: flex-start;
     align-items: center; 
 }
 
@@ -38,7 +45,7 @@ h2 {
     padding: 18px;
     border: none;
     position: relative;
-    top: 0px; left: -15px;
+    top: 0px; left: -10px;
     color: white;
 }
 
@@ -59,19 +66,22 @@ h2 {
 
 .fa-map-marker-alt {
     background-color: #f2f2f2;
-    padding: 18px; 
+    padding: 18px;
     border-radius: 15px 0 0 15px;
     font-size: 1.2em;
+    position: relative;
 }
 
 #location {
     font-weight: 800;
     font-size: 1.2em;
     font-family: "Raleway", sans-serif;
-    padding: 15px 0 15px 15px;
     border: solid #f2f2f2 thin;
     margin: 0;  
-    width: 245px;
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+     
 }
 
 ::placeholder{
@@ -91,7 +101,6 @@ h2 {
     background-color: white;
     border: solid 2px #d9d9d9;
     border-radius: 30px ;
-    padding-right: 5px;
     height: 45px;
     display: flex;
     justify-content: center;
@@ -164,9 +173,9 @@ h4 {
 
 .card {
     background-color: white;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 0px 10px 0px;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px 5px #e4e4e4;
+    box-shadow: 1px 1px 10px 5px #e4e4e4;
 }
 
 /*----------------- POPULAR global -----------------*/
@@ -182,13 +191,14 @@ h4 {
     justify-content: space-between;
     align-items: center;
     color: black;
-    padding: 30px 40px 10px 40px;
+    /*padding: 30px 40px 10px 40px;*/
 }
 
 .fa-chart-line {
     font-weight: 800;
     font-size: 1.5em;
     color: black;
+    padding-top: 40px;
 }
 
 #popular_cards .card {
@@ -197,9 +207,10 @@ h4 {
     height: 140px;
 }
 
-#popular_cards{
+/*#popular_cards{
     padding: 0 30px 30px 30px;
 }
+*/
 
 #popular img { 
     width: 40%; 
@@ -208,26 +219,26 @@ h4 {
 }
 
 #popular .hotel_details  {
-    margin: 5px 20px 5px 20px;
+    margin: 5px 10px 5px 20px;
 }
 
-#popular h3{
-    padding-right: 5px;
-}
+/*#popular h3{
+    padding-right: 10px;
+}*/
 
 #popular .stars {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 /*----------------- HOUSING MARSEILLE global -----------------*/
 
-#housing h1{
-    padding:30px 20px 30px 20px;
-}
+/*#housing h1{
+    padding:30px 0px 30px 0px; /* avant 30 20 30 20
+}*/
 
-#housing h2 {
+/*#housing h2 {
     padding-left: 20px;
-}
+}*/
 
 #housing img { 
     height: 115px; 
@@ -257,9 +268,9 @@ h4 {
     padding-bottom: 50px;
 }
 
-#activities h1 {
-    padding: 40px 20px 20px 20px;
-} 
+/*#activities h1 {
+    padding: 40px 0px 20px 0px; /* avant 40 20 20 20
+} */
 
 #activities h3 {
     padding: 15px;
@@ -269,9 +280,15 @@ h4 {
 
 @media all and (max-width:770px){ /* mobile */ 
 
-    #search, #housing, #activities, footer{
-        margin: 0px 30px 0 30px; 
+    /*#search, #housing, #activities, footer{
+        margin: 0px 20px 0 20px; 
+    }*/
+
+   #signUp, #search, #popular, #housing, #activities {
+        padding:  0 5% 0 5%;
     }
+
+   
    
     /*------------------- MOBILE SEARCH -------------------*/
 
@@ -280,7 +297,7 @@ h4 {
     }
 
     #buttons_filters button {
-        margin: 5px;
+        margin: 5px 5px 5px 0px; /*avant juste 5px*/
     }
     
     #info {
@@ -291,16 +308,14 @@ h4 {
     /*------------------- MOBILE CARDS -------------------*/
 
     .card {
-        width: 350px;
+        width: 90%;
     }
 
-    #housing .card {
-        width: 335px;
-    }
 
     #popular_cards, #housing_cards, #activities_cards {
-        padding-bottom: 20px;
+        padding-bottom: 30px;
         display: flex;
+        justify-content: center;
         flex-direction: column;
         align-items: center;
     }
@@ -328,8 +343,12 @@ h4 {
         margin-top: 30px;
     }
 
-    #search, #housing, #activities {
+    #search, #housing, #activities, #popular_title {
         margin: 0px 30px 0 30px; 
+    }
+
+    #popular{
+        padding-bottom: 30px;
     }
 
     /*------------------- TABLETTE SEARCH -------------------*/
@@ -362,18 +381,18 @@ h4 {
     }
 
     #popular .card {
-        width: 345px;
+        width: 45%;
     }
    
     #housing .card {
-        width: 335px;
+        width: 43%;
     }
 
     /*------------------- TABLETTE ACTIVITIES FORMATS -------------------*/
 
     #activities_cards .card {
         height: 190px;
-        width: 335px;
+        width: 43%;
         margin-bottom: 30px;
     }
     
@@ -395,6 +414,10 @@ h4 {
 
     #subheading{
         margin-top: 30px;
+    }
+
+    .card{
+        margin: 10px;
     }
 
     /*------------------- DESKTOP SEARCH -------------------*/
@@ -424,6 +447,10 @@ h4 {
         justify-content: space-between;  
     }
 
+    #popular, #housing {
+        padding-bottom:15px;
+    }
+
     /*------------------- DESKTOP HOUSING MARSEILLE -------------------*/
 
     #housing {
@@ -444,7 +471,7 @@ h4 {
     }
 
     #housing h1 {
-        padding: 30px 40px 10px 40px;
+        padding:40px 40px 25px 40px;
     }
 
     #housing h2 {
@@ -458,7 +485,7 @@ h4 {
     /*------------------- DESKTOP POPULAR -------------------*/
 
     #popular {
-        width: 30%;
+        width: 33%;
         border-radius: 15px;
     }
 
@@ -481,6 +508,12 @@ h4 {
 
     #popular h3{
         padding-right: 0;
+    }
+    
+
+    #popular_title{
+        padding: 0 40px 25px 40px;
+        
     }
 
     /*------------------- DESKTOP ACTIVITES FORMATS -------------------*/
