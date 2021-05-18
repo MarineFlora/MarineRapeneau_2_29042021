@@ -343,10 +343,14 @@ h4 {
         margin-top: 30px;
     }
 
-    #search, #housing, #activities {
+    #search, #housing, #activities, #popular_title {
         margin: 0px 30px 0 30px; 
     }
 
+    #popular{
+        padding-bottom: 30px;
+    }
+    
     /*------------------- TABLETTE SEARCH -------------------*/
     
     #button_mobile {
@@ -377,18 +381,18 @@ h4 {
     }
 
     #popular .card {
-        width: 345px;
+        width: 45%;
     }
    
     #housing .card {
-        width: 335px;
+        width: 43%;
     }
 
     /*------------------- TABLETTE ACTIVITIES FORMATS -------------------*/
 
     #activities_cards .card {
         height: 190px;
-        width: 335px;
+        width: 43%;
         margin-bottom: 30px;
     }
     

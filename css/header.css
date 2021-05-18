@@ -89,10 +89,17 @@ a {
 
     header {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: flex-end; 
+        padding: 0 5% 0 5%;
+        position: relative;
     }
 
+    #logo {
+        position: absolute;
+        top: 45px;   /*avant, avec margin en plus + haut : top:5px left: 5px*/
+        left: 25px;
+    }
     .navigation > #signUp { 
         order: 3;
     }
@@ -100,6 +107,7 @@ a {
     .navigation {
         display: flex;
         align-items: baseline;
+
     }
 
     .navigation li {
@@ -118,8 +126,10 @@ a {
     }
     
     #signUp {
-        padding: 25px 15px 0 15px;
+        padding: 25px 0 0 15px;
     }
+
+    
 
 }
 
