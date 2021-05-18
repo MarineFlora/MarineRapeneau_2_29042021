@@ -30,6 +30,7 @@ h2 {
 
 #champ {
     display: flex;
+    justify-content: flex-start;
     align-items: center; 
 }
 
@@ -38,7 +39,7 @@ h2 {
     padding: 18px;
     border: none;
     position: relative;
-    top: 0px; left: -15px;
+    top: 0px; left: -10px;
     color: white;
 }
 
@@ -59,19 +60,22 @@ h2 {
 
 .fa-map-marker-alt {
     background-color: #f2f2f2;
-    padding: 18px; 
+    padding: 18px;
     border-radius: 15px 0 0 15px;
     font-size: 1.2em;
+    position: relative;
 }
 
 #location {
     font-weight: 800;
     font-size: 1.2em;
     font-family: "Raleway", sans-serif;
-    padding: 15px 0 15px 15px;
     border: solid #f2f2f2 thin;
     margin: 0;  
-    width: 245px;
+    width: 240px;
+    height: 50px;
+    padding-left: 20px;
+     
 }
 
 ::placeholder{
