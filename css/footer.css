@@ -1,7 +1,9 @@
 footer {
     background-color: #f2f2f2; 
     margin: 0;
-    padding: 50px 0 50px 0; /*avant juste 50px*/
+    padding: 0 5% 0 5%; /*avant juste 50px*/
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 footer ul {
@@ -9,9 +11,9 @@ footer ul {
     font-weight: 500;
 }
 
-footer div {
+/*footer div {
     padding: 0px 80px 0px 0px;
-}
+}*/
 
 footer h2 {
     padding-bottom: 10px;

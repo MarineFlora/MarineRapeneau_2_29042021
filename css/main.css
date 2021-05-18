@@ -6,7 +6,12 @@ body{
 h1 {
     font-weight: 800;
     font-size: 1.4em;
-    margin: 10px 0 10px 0;
+    padding-top: 40px;
+    margin: 0;
+}
+
+#popular_title, #housing h1, #activities h1{
+    padding-bottom: 25px;
 }
 
 /*#search p {
@@ -24,6 +29,7 @@ h2 {
     font-weight: 700;
     padding-right: 15px;
 }
+
 
 
 /*----------------- SEARCH CHAMP DE RECHERCHE global -----------------*/
@@ -72,7 +78,7 @@ h2 {
     font-family: "Raleway", sans-serif;
     border: solid #f2f2f2 thin;
     margin: 0;  
-    width: 240px;
+    width: 100%;
     height: 50px;
     padding-left: 20px;
      
@@ -169,7 +175,7 @@ h4 {
     background-color: white;
     margin: 10px 0px 10px 0px;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px 5px #e4e4e4;
+    box-shadow: 1px 1px 10px 5px #e4e4e4;
 }
 
 /*----------------- POPULAR global -----------------*/
@@ -192,6 +198,7 @@ h4 {
     font-weight: 800;
     font-size: 1.5em;
     color: black;
+    padding-top: 40px;
 }
 
 #popular_cards .card {
@@ -212,7 +219,7 @@ h4 {
 }
 
 #popular .hotel_details  {
-    margin: 5px 20px 5px 20px;
+    margin: 5px 10px 5px 20px;
 }
 
 /*#popular h3{
@@ -220,14 +227,14 @@ h4 {
 }*/
 
 #popular .stars {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 /*----------------- HOUSING MARSEILLE global -----------------*/
 
-#housing h1{
-    padding:30px 0px 30px 0px; /* avant 30 20 30 20*/
-}
+/*#housing h1{
+    padding:30px 0px 30px 0px; /* avant 30 20 30 20
+}*/
 
 /*#housing h2 {
     padding-left: 20px;
@@ -261,9 +268,9 @@ h4 {
     padding-bottom: 50px;
 }
 
-#activities h1 {
-    padding: 40px 0px 20px 0px; /* avant 40 20 20 20*/
-} 
+/*#activities h1 {
+    padding: 40px 0px 20px 0px; /* avant 40 20 20 20
+} */
 
 #activities h3 {
     padding: 15px;
@@ -277,9 +284,11 @@ h4 {
         margin: 0px 20px 0 20px; 
     }*/
 
-    /*#popular{
-        padding: 0 20px 0 20px;
-    }*/
+   #signUp, #search, #popular, #housing, #activities {
+        padding:  0 5% 0 5%;
+    }
+
+   
    
     /*------------------- MOBILE SEARCH -------------------*/
 
@@ -299,13 +308,14 @@ h4 {
     /*------------------- MOBILE CARDS -------------------*/
 
     .card {
-        width: 335px;
+        width: 90%;
     }
 
 
     #popular_cards, #housing_cards, #activities_cards {
-        padding-bottom: 20px;
+        padding-bottom: 30px;
         display: flex;
+        justify-content: center;
         flex-direction: column;
         align-items: center;
     }
