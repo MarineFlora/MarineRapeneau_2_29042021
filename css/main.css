@@ -1,25 +1,6 @@
-body{
-    display: flex;
-    justify-content: center;
-}
-
-h1 {
-    font-weight: 800;
-    font-size: 1.4em;
-    padding-top: 40px;
-    margin: 0;
-}
-
 #popular_title, #housing h1, #activities h1{
     padding-bottom: 25px;
 }
-
-h2 {
-    font-size: 1.3em;
-    font-weight: 700;
-    padding-right: 15px;
-}
-
 
 /*----------------- SEARCH CHAMP DE RECHERCHE global -----------------*/
 
@@ -147,12 +128,6 @@ h2 {
 
 .stars .last {
     color:#f2f2f2;
-}
-
-h3 {
-    font-size:0.9em;
-    font-weight: 700;
-    margin-top: 10px;
 }
 
 h4 {
@@ -368,11 +343,7 @@ h4 {
 
 
 @media all and (min-width: 1391px) { /* desktop*/
-
-    header, #search, #container_housing, #activities{
-        margin: 0px 50px 0 50px; 
-    } 
-
+ 
     /*------------------- DESKTOP SEARCH -------------------*/
 
     #button_mobile {
