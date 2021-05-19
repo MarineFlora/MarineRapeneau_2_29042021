@@ -7,13 +7,8 @@ body {
     max-width: 1440px;
 }
 
-/*#logo {
-    margin: 10px 20px 10px 20px; /* vraiment utile??? juste besoin de positionnner correctement en abosulte?
-} */
-
 #signUp {
     color:#0065fc;
-   /* margin-right: 20px;*/
 }
 
 .navigation {
@@ -50,7 +45,7 @@ a {
 
    #logo {
         position: absolute;
-        top: 15px;   /*avant, avec margin en plus + haut : top:5px left: 5px*/
+        top: 15px;  
         left: 25px;
     }
 
@@ -97,7 +92,7 @@ a {
 
     #logo {
         position: absolute;
-        top: 45px;   /*avant, avec margin en plus + haut : top:5px left: 5px*/
+        top: 45px;  
         left: 25px;
     }
     .navigation > #signUp { 
