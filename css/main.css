@@ -173,7 +173,7 @@ h4 {
 
 .card {
     background-color: white;
-    margin: 10px 0px 10px 0px;
+    margin: 10px 5px 10px 5px;
     border-radius: 20px;
     box-shadow: 1px 1px 10px 5px #e4e4e4;
 }
@@ -259,7 +259,7 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5px;
+  /*padding: 5px;*/
 }
 
 #housing .hotel_details  {
@@ -288,7 +288,7 @@ h4 {
 
 
 
-@media all and (max-width:770px){ /* mobile */ 
+@media all and (max-width:750px){ /* mobile */ 
 
     /*#search, #housing, #activities, footer{
         margin: 0px 20px 0 20px; 
@@ -319,6 +319,7 @@ h4 {
 
     .card {
         width: 90%;
+       /* max-width: 350px;*/
     }
 
 
@@ -347,18 +348,18 @@ h4 {
 }
 
 
-@media all and (min-width: 770px) and (max-width: 1390px) { /* tablette*/
+@media all and (min-width: 750px) and (max-width: 1390px) { /* tablette*/
     
-    #subheading{
+   /* #subheading{
         margin-top: 30px;
-    }
+    }*/
 
-    #search, #housing, #activities, #popular_title {
+    #search, #housing, #activities{
         margin: 0px 30px 0 30px; 
     }
 
     #popular{
-        padding-bottom: 30px;
+        padding: 0 30px 30px 30px;
     }
 
     /*------------------- TABLETTE SEARCH -------------------*/
@@ -390,11 +391,12 @@ h4 {
         flex-wrap: wrap;
     }
 
-    #popular .card {
-        width: 45%;
+    #popular .card, #housing .card {
+        width: 330px;
+        
     }
    
-    #housing .card {
+ {
         width: 43%;
     }
 
@@ -422,13 +424,13 @@ h4 {
         margin: 0px 50px 0 50px; 
     } 
 
-    #subheading{
+ /*   #subheading{
         margin-top: 30px;
-    }
+    }*/
 
-    .card{
+    /*.card{
         margin: 10px;
-    }
+    }*/
 
     /*------------------- DESKTOP SEARCH -------------------*/
 
@@ -473,7 +475,7 @@ h4 {
     #housing_cards {
         display: flex;
         flex-wrap: wrap;
-        justify-content:center;
+        justify-content:space-evenly;
     }
 
     #housing .card {
@@ -481,7 +483,7 @@ h4 {
     }
 
     #housing h1 {
-        padding:40px 40px 25px 40px;
+        padding-left: 35px;
     }
 
     #housing h2 {
@@ -510,10 +512,11 @@ h4 {
         width: 345px;
     }
 
-   /* #popular img { 
+    #popular img { 
+        
         object-fit: cover;
         border-radius: 15px 0 0 15px;
-    }*/
+    }
 
     #popular h3{
         padding-right: 0;
@@ -521,7 +524,7 @@ h4 {
     
 
     #popular_title{
-        padding: 0 40px 25px 40px;
+        padding: 0 35px 25px 35px;
         
     }
 
@@ -533,7 +536,7 @@ h4 {
     }
 
     #activities h1 {
-        padding: 40px 20px 20px 0;
+        padding: 40px 20px 35px 0;
     }
 
     #activities_cards img{

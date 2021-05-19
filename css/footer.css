@@ -25,7 +25,7 @@ footer li {
 }
 
 
-@media all and (min-width: 770px) and (max-width: 1390px) { /* tablette*/
+@media all and (min-width: 750px) and (max-width: 1390px) { /* tablette*/
 
     footer {
         display: flex;
