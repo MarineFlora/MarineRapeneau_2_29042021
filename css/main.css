@@ -19,10 +19,10 @@ h1 {
     margin: 10px;
 }*/
 
-a { 
+/*a { 
     text-decoration: none; 
     color: black;  
-}
+} deja dans header*/
 
 h2 {
     font-size: 1.3em;
@@ -219,15 +219,21 @@ h4 {
 }
 
 #popular .hotel_details  {
-    margin: 5px 10px 5px 20px;
+    padding: 5px 15px 5px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-/*#popular h3{
-    padding-right: 10px;
-}*/
+
+#popular h3, h4{
+    margin: 0;
+}
+
+
 
 #popular .stars {
-    margin-top: 30px;
+    padding-top: 30px;
 }
 
 /*----------------- HOUSING MARSEILLE global -----------------*/
@@ -276,6 +282,7 @@ h4 {
     padding: 15px;
     margin:0; 
 }
+
 
 
 @media all and (max-width:770px){ /* mobile */ 
@@ -406,7 +413,7 @@ h4 {
 }
 
 
-@media all and (min-width: 1390px) { /* desktop*/
+@media all and (min-width: 1391px) { /* desktop*/
 
     header, #search, #container_housing, #activities{
         margin: 0px 50px 0 50px; 
