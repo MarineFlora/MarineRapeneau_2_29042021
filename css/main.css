@@ -1,10 +1,10 @@
-#popular_title, #housing h1, #activities h1{
+#popular_title, #section_housing h1, #section_activities h1{
     padding-bottom: 25px;
 }
 
 /*----------------- SEARCH CHAMP DE RECHERCHE global -----------------*/
 
-#champ {
+#search_field {
     display: flex;
     justify-content: flex-start;
     align-items: center; 
@@ -14,7 +14,7 @@
     margin: 10px 0;
 }
 
-#champ button {
+#search_field button {
     background-color: #0065fc;
     padding: 18px;
     border: none;
@@ -46,7 +46,7 @@
     position: relative;
 }
 
-#location {
+#enter_location {
     font-weight: 800;
     font-size: 1.2em;
     font-family: "Raleway", sans-serif;
@@ -86,7 +86,7 @@
     font-weight: 700;
     padding-right: 15px;
 }
-#filters i { 
+#search_filters i { 
     color: #0065fc;
     background-color: #deebff ;
     height: 45px;
@@ -100,18 +100,18 @@
     font-size: 1.4em;
 }
 
-#filters button:hover {
+#search_filters button:hover {
     background-color: #0065fc;
     color: white;
 }
 
 /*----------------- SEARCH INFO global -----------------*/
 
-#info {
+#search_info {
     margin: 10px 0 20px 0;
 }
 
-#info i { 
+#search_info i { 
     color:#0065fc;
     border:solid 1px #d9d9d9;
     padding: 5px;
@@ -148,7 +148,7 @@ h4 {
 
 /*----------------- POPULAR global -----------------*/
 
-#popular {
+#section_popular {
     background-color:#f2f2f2; 
     display: flex; 
     flex-direction: column;
@@ -174,58 +174,58 @@ h4 {
     height: 140px;
 }
 
-#popular img { 
+#section_popular img { 
     width: 130px; 
     object-fit: cover;
     border-radius: 15px 0 0 15px;
 }
 
-#popular .hotel_details  {
+#section_popular .hotel_details  {
     padding: 5px 20px 5px 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-#popular h3, h4{
+#section_popular h3, h4{
     margin: 0;
 }
 
-#popular .stars {
+#section_popular .stars {
     padding-top: 30px;
 }
 
 /*----------------- HOUSING MARSEILLE global -----------------*/
 
-#housing img { 
+#section_housing img { 
     height: 115px; 
     object-fit: cover;
     border-radius: 15px 15px 0 0px;
 }
 
-#housing .card {
+#section_housing .card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 5px;
 }
 
-#housing .hotel_details  {
+#section_housing .hotel_details  {
     margin: 5px;
 }
 
-#housing h4, #housing h3, #housing .stars { 
+#section_housing h4, #section_housing h3, #section_housing .stars { 
     margin: 7px;
 }
 
 
 /*----------------- ACTIVITIES global -----------------*/
 
-#activities {
+#section_activities {
     padding-bottom: 50px;
 }
 
-#activities h3 {
+#section_activities h3 {
     padding: 15px;
     margin:0; 
 }
@@ -233,7 +233,7 @@ h4 {
 
 @media all and (max-width:750px){ /* mobile */ 
 
-   #signUp, #search, #popular, #housing, #activities {
+   #signUp, #section_search, #section_popular, #section_housing, #section_activities {
         padding:  0 5% 0 5%;
     }
    
@@ -247,7 +247,7 @@ h4 {
         margin: 5px 5px 5px 0px;
     }
     
-    #info {
+    #search_info {
         display: flex;
         align-items: baseline;
     }
@@ -274,7 +274,7 @@ h4 {
         margin-bottom: 30px;
     }
     
-    #activities img {
+    #section_activities img {
         border-radius: 15px 15px 0 0px;
         height: 135px;
         width: 100%;
@@ -287,11 +287,11 @@ h4 {
 @media all and (min-width: 750px) and (max-width: 1390px) { /* tablette*/
     
 
-    #search, #housing, #activities{
+    #section_search, #section_housing, #section_activities {
         margin: 0px 30px 0 30px; 
     }
 
-    #popular{
+    #section_popular{
         padding: 0 30px 30px 30px;
     }
 
@@ -305,12 +305,12 @@ h4 {
         margin: 5px;
     }
     
-    #filters {
+    #search_filters {
         display: flex;
         align-items:baseline;
     }
 
-    #info {
+    #search_info {
         display: flex;
         align-items: center;
     }
@@ -324,7 +324,7 @@ h4 {
         flex-wrap: wrap;
     }
 
-    #popular .card, #housing .card {
+    #section_popular .card, #section_housing .card {
         width: 330px;   
     }
    
@@ -336,7 +336,7 @@ h4 {
         margin-bottom: 30px;
     }
     
-    #activities img {
+    #section_activities img {
         border-radius: 15px 15px 0 0;
         height: 135px;
         width: 100%;
@@ -358,12 +358,12 @@ h4 {
         margin: 15px;
     }
     
-    #filters {
+    #search_filters {
         display: flex;
         align-items:baseline;
     }
 
-    #info {
+    #search_info {
         display: flex;
         align-items: center;
     }
@@ -375,13 +375,13 @@ h4 {
         justify-content: space-between;  
     }
 
-    #popular, #housing {
+    #section_popular, #section_housing {
         padding-bottom:15px;
     }
 
     /*------------------- DESKTOP HOUSING MARSEILLE -------------------*/
 
-    #housing {
+    #section_housing {
         background-color: #f2f2f2;
         border-radius: 15px;
         margin-right: 2.9%;
@@ -394,25 +394,25 @@ h4 {
         justify-content:space-evenly;
     }
 
-    #housing .card {
+    #section_housing .card {
         width: 250px;
     }
 
-    #housing h1 {
+    #section_housing h1 {
         padding-left: 35px;
     }
 
-    #housing h2 {
+    #section_housing h2 {
         padding-left: 40px;
     }
 
-    #container_housing > #housing {
+    #container_housing > #section_housing {
         order: -1;
     }
 
     /*------------------- DESKTOP POPULAR -------------------*/
 
-    #popular {
+    #section_popular {
         width: 33%;
         border-radius: 15px;
     }
@@ -424,17 +424,17 @@ h4 {
         flex-wrap: wrap;
     }
 
-    #popular .card { 
+    #section_popular .card { 
         width: 345px;
     }
 
-    #popular img { 
+    #section_popular img { 
         
         object-fit: cover;
         border-radius: 15px 0 0 15px;
     }
 
-    #popular h3{
+    #section_popular h3{
         padding-right: 0;
     }
     
@@ -451,7 +451,7 @@ h4 {
         margin: 0;
     }
 
-    #activities h1 {
+    #section_activities h1 {
         padding: 40px 20px 35px 0;
     }
 

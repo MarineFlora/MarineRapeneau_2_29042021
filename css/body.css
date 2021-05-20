@@ -5,7 +5,7 @@ body {
     justify-content: center;
 }
 
-#container {
+#page_container {
     max-width: 1440px;
 }
 
@@ -39,7 +39,7 @@ a {
 
 @media all and (min-width: 1391px) { /* desktop*/
 
-    header, #search, #container_housing, #activities{
+    header, #section_search, #container_housing, #section_activities {
         margin: 0px 50px 0 50px; 
     }
 
