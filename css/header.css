@@ -14,7 +14,7 @@
 }
 
 
-@media all and (max-width:750px) { /* mobile */
+@media all and (max-width:749px) { /* mobile */
 
    #logo {
         position: absolute;

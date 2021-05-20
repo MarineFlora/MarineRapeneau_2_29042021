@@ -4,65 +4,57 @@
 
 /*----------------- SEARCH CHAMP DE RECHERCHE global -----------------*/
 
-#search_field {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center; 
-}
-
 #subheading p {
     margin: 10px 0 5px 0;
 }
 
+#search_field {
+    display: flex;
+    align-items: center; 
+}
+
+.fa-map-marker-alt { /*format icone map */
+    background-color: #f2f2f2;
+    padding: 17px 19px;
+    border-radius: 15px 0 0 15px;
+    font-size: 1.1em;
+}
+
+#enter_location { 
+    font-size: 1.1em;
+    font-weight: 800;
+    border: solid #f2f2f2 thin;
+    width: 100%; /* permet la réduction du champ de recherche en diminuant page*/
+    height: 46px;
+    padding-left: 20px;
+}
+
+::placeholder { /* pseudo élement, met en forme "Marseille, France" pré-remplie dans le champ de recherche */
+    opacity: 1;
+    color: black;
+}
+
 #search_field button {
     background-color: #0065fc;
-    padding: 18px;
+    height: 52px;
     border: none;
-    position: relative;
-    top: 0px; left: -10px;
     color: white;
+    font-size: 1.1em;
+    font-weight: 600;
 }
 
 #button_mobile {
     border-radius: 15px;
+    width: 52px;
 }
 
 #button_desktop {
     border-radius: 0 15px 15px 0;
-    font-weight: 600;
-    font-size: 1.0em;
+    width: 130px;
 }
 
 #button_desktop, #enter_location, .filter_title{
     font-family: "Raleway", sans-serif;
-}
-
-.fa-search { 
-    color: white;
-    font-size: 1.3em;
-}
-
-.fa-map-marker-alt {
-    background-color: #f2f2f2;
-    padding: 18px;
-    border-radius: 15px 0 0 15px;
-    font-size: 1.2em;
-    position: relative;
-}
-
-#enter_location {
-    font-weight: 800;
-    font-size: 1.2em;
-    border: solid #f2f2f2 thin;
-    margin: 0;  
-    width: 100%;
-    height: 50px;
-    padding-left: 20px;
-}
-
-::placeholder{
-    opacity: 1;
-    color: black;
 }
 
 /*----------------- SEARCH FILTERS global -----------------*/
@@ -86,7 +78,7 @@
 .filter_title {
     font-size: 1.3em;
     font-weight: 700;
-    padding-right: 15px;
+    padding-right: 7px;
 }
 
 #search_filters i { 
@@ -234,7 +226,7 @@ h4 {
 }
 
 
-@media all and (max-width:750px){ /* mobile */ 
+@media all and (max-width:749px){ /* mobile */ 
 
    #signUp, #section_search, #section_popular, #section_housing, #section_activities {
         padding:  0 5% 0 5%;
@@ -247,7 +239,7 @@ h4 {
     }
 
     #buttons_filters button {
-        margin: 5px 5px 5px 0px;
+        margin: 5px 10px 5px 0px;
     }
     
     #search_info {
@@ -286,8 +278,15 @@ h4 {
 
 }
 
+@media all and (min-width: 750px) { /* Tablette et Desktop, élements qui ne varient pas sur tablette et desktop*/
 
-@media all and (min-width: 750px) and (max-width: 1390px) { /* tablette*/
+    /*------------------- DESKTOP SEARCH -------------------*/
+        #button_mobile {
+            display: none;
+        }
+    }
+
+@media all and (min-width: 750px) and (max-width: 1389px) { /* tablette*/
     
 
     #section_search, #section_housing, #section_activities {
@@ -299,10 +298,6 @@ h4 {
     }
 
     /*------------------- TABLETTE SEARCH -------------------*/
-    
-    #button_mobile {
-        display: none;
-    }
 
     #buttons_filters button {
         margin: 5px;
@@ -311,6 +306,7 @@ h4 {
     #search_filters {
         display: flex;
         align-items:baseline;
+        margin-top: 10px;
     }
 
     #search_info {
@@ -349,13 +345,11 @@ h4 {
 }
 
 
-@media all and (min-width: 1391px) { /* desktop*/
+@media all and (min-width: 1390px) { /* desktop*/
  
     /*------------------- DESKTOP SEARCH -------------------*/
 
-    #button_mobile {
-        display: none;
-    }
+
 
     #buttons_filters button {
         margin: 15px;
