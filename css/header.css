@@ -14,7 +14,7 @@
 }
 
 
-@media all and (max-width:750px) { /*mobile */
+@media all and (max-width:750px) { /* mobile */
 
    #logo {
         position: absolute;
@@ -54,7 +54,6 @@
     header {
         display: flex;
         justify-content: flex-end;
-        padding: 0 25px 0 0;
     }
 
     #logo {
@@ -99,12 +98,9 @@
 
     header{
         position: relative;
-        padding: 0;
     }
 
-    #logo {
-        position: absolute;
-        top: 45px;   
+    #logo {  
         left: 0px;
     }
 }
