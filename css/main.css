@@ -118,11 +118,15 @@
     flex-shrink: 0; /*empeche deformation de l'élément sur petites tailles écran*/ 
 }
 
-/*----------------- HOUSING global -----------------*/
-
+/*----------------- CONTAINER HOUSING global -----------------*/
+/* j'en suis là!!!!!*/
 .stars {
     color: #0065fc;
-    font-size: 0.8em;
+    font-size: 0.7em;
+}
+
+.fa-star {
+    padding-right: 2px;
 }
 
 .stars .last {
@@ -130,15 +134,22 @@
 }
 
 h4 {
-    font-size: 0.8em;
-    font-weight: 600;
+    font-size: 0.9em;
+    font-weight: 500;
 }
 
 .card {
     background-color: white;
-    margin: 10px 5px 10px 5px;
     border-radius: 20px;
     box-shadow: 1px 1px 10px 5px #e4e4e4;
+}
+
+#container_housing img{
+    padding: 5px;
+}
+
+#section_housing .card, #section_popular .card {
+    margin: 10px 5px 10px 5px; 
 }
 
 /*----------------- POPULAR global -----------------*/
@@ -165,18 +176,18 @@ h4 {
 
 #popular_cards .card {
     display: flex;
-    padding: 5px;
+   /* padding: 5px; a mettre a l'iamge plutot*/
     height: 140px;
 }
 
 #section_popular img { 
     width: 130px; 
     object-fit: cover;
-    border-radius: 15px 0 0 15px;
+    border-radius: 20px 0 0 20px;
 }
 
 #section_popular .hotel_details  {
-    padding: 5px 20px 5px 20px;
+    padding: 5px 10px 5px 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -187,7 +198,7 @@ h4 {
 }
 
 #section_popular .stars {
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 /*----------------- HOUSING MARSEILLE global -----------------*/
@@ -195,14 +206,15 @@ h4 {
 #section_housing img { 
     height: 115px; 
     object-fit: cover;
-    border-radius: 15px 15px 0 0px;
+    border-radius: 20px 20px 0 0px;
+   
 }
 
 #section_housing .card {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5px;
+ /* padding: 5px; à mettre au image plutot ?*/
 }
 
 #section_housing .hotel_details  {
@@ -247,13 +259,11 @@ h4 {
         align-items: baseline;
     }
 
-    
 
-
-    /*------------------- MOBILE CARDS -------------------*/
+    /*------------------- MOBILE CONTAINER HOUSING-------------------*/
 
     .card {
-        width: 90%;
+        width: 100%;
     }
 
 
@@ -269,7 +279,7 @@ h4 {
 
     #activities_cards .card {
         height: 190px;
-        margin-bottom: 30px;
+        margin-bottom: 25px;
     }
     
     #section_activities img {
@@ -299,6 +309,7 @@ h4 {
         }
     }
 
+
 @media all and (min-width: 750px) and (max-width: 1389px) { /* tablette*/
     
 
@@ -321,7 +332,7 @@ h4 {
     }
 
 
-    /*------------------- TABLETTE HOUSING -------------------*/
+    /*------------------- TABLETTE CONTAINER HOUSING -------------------*/
 
     #popular_cards, #housing_cards, #activities_cards{
         display: flex;
@@ -359,10 +370,8 @@ h4 {
     #buttons_filters button {
         margin: 15px;
     }
-    
-  
    
-    /*------------------- DESKTOP HOUSING -------------------*/
+    /*------------------- DESKTOP CONTAINER HOUSING -------------------*/
 
     #container_housing { 
         display: flex; 
@@ -425,7 +434,7 @@ h4 {
     #section_popular img { 
         
         object-fit: cover;
-        border-radius: 15px 0 0 15px;
+        border-radius: 20px 0 0 20px;
     }
 
     #section_popular h3{
