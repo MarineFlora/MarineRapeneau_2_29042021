@@ -10,6 +10,10 @@
     align-items: center; 
 }
 
+#subheading p {
+    margin: 10px 0;
+}
+
 #champ button {
     background-color: #0065fc;
     padding: 18px;
