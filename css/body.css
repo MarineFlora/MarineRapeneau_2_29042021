@@ -40,7 +40,7 @@ a {
 @media all and (min-width: 1390px) { /* desktop*/
 
     header, #section_search, #container_housing, #section_activities {
-        margin: 0px 50px 0 50px; 
+        margin: 15px 50px; 
     }
 
 }
