@@ -4,7 +4,7 @@ Project 2 from OpenClassrooms's online course "web developer".
 
 ## General Info
 The task is to prototype the new design of the vacation planning website, Reservia. To integrate the responsive mockup (desktop, tablet, mobile) in HTML/CSS. <br/>
-Status : in development
+Status : Finished
 
 ## Technologies
 * HTML5
