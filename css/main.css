@@ -259,7 +259,7 @@ h4 {
     }
 }
 
-@media all and (max-width:749px){ /* mobile */ 
+@media all and (max-width:750px){ /* mobile */ 
 
    #signUp, #section_search, #section_popular, #section_housing, #section_activities {
         padding:  0 20px;
@@ -330,7 +330,7 @@ h4 {
     }
 
 
-@media all and (min-width: 750px) and (max-width: 1389px) { /* tablette*/
+@media all and (min-width: 750px) and (max-width: 1390px) { /* tablette*/
     
 
     #section_search, #section_housing, #section_activities {
