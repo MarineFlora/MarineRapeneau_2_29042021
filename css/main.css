@@ -141,7 +141,7 @@ h4 {
 .card {
     background-color: white;
     border-radius: 20px;
-    box-shadow: 1px 1px 10px 5px #e4e4e4;
+    box-shadow: 0 4px 12px #e4e4e4, 0 4px 12px #e4e4e4; /* ombre selon le Material design = combine ombre de lumière ambiante et lumière directe (key light)*/
 }
 
 #container_housing img{
