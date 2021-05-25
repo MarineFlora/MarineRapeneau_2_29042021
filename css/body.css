@@ -39,7 +39,15 @@ a {
 
 @media all and (min-width: 1390px) { /* desktop*/
 
-    header, #section_search, #container_housing, #section_activities {
+    header {
+        margin: 0 50px;
+    }
+
+    #section_search {
+        margin: 0 50px 15px 50px;
+    }
+
+    #container_housing, #section_activities {
         margin: 15px 50px; 
     }
 
