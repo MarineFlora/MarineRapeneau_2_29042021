@@ -255,7 +255,7 @@ h4 {
 @media all and (max-width: 365px){ /*mobile petits formats pour que texte ne se chevauchent pas*/
 
     #popular_cards .hotel_details  {
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
 }
 
