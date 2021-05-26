@@ -1,0 +1,109 @@
+#signUp {
+    color:#0065fc;
+}
+
+.navigation {
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.navigation ul { 
+    display: flex; 
+    padding: 0;   
+    margin: 0;
+}
+
+.navigation a:hover { 
+    color: #0065fc;
+}
+
+
+
+@media all and (max-width:750px) { /* mobile */
+
+   #logo {
+        position: absolute;
+        top: 25px;  
+        left: 5%;
+    }
+
+    #signUp {
+        text-align: end;
+        margin: 40px 0 0 0;
+    }
+
+    .navigation ul{
+        margin-top: 40px;
+    }
+
+    .navigation li {
+        flex: 0.5; 
+        border-bottom: solid 3px #f2f2f2; 
+        text-align: center;
+        height: 100%;
+    } 
+  
+    .navigation li:hover { 
+        border-bottom: solid 3px #0065fc;
+    }
+
+    .navigation a{
+        display: block;
+        padding-bottom: 15px;
+    }
+}
+
+
+@media all and (min-width:750px) { /* tablette et desktop*/
+
+    header {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #logo {
+        position: absolute;
+        top: 45px;  
+        left: 25px;
+    }
+
+    .navigation > #signUp { 
+        order: 3;
+    }
+
+    .navigation {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .navigation li {
+        border-top: solid 3px white; 
+        text-align: center; 
+        height: 100%; 
+    } 
+
+    .navigation li:hover { 
+        border-top: solid 3px #0065fc;
+    }
+
+    #signUp {
+        padding: 25px 35px 0 35px;
+    }
+
+    .navigation a{
+        display: block;
+        padding: 50px 35px 0 35px; 
+    }
+}
+
+
+@media all and (min-width: 1390px) { /* desktop*/
+
+    header{
+        position: relative;
+    }
+
+    #logo {  
+        left: 0px;
+    }
+}

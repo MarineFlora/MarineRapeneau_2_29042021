@@ -1,0 +1,556 @@
+#popular_title, #section_housing h1, #section_activities h1{
+    padding-bottom: 25px;
+}
+
+/*----------------- SEARCH CHAMP DE RECHERCHE global -----------------*/
+
+#subheading p {
+    margin: 10px 0 5px 0;
+}
+
+#search_field {
+    display: flex;
+    align-items: center; 
+    margin: 20px 0 ;
+}
+
+.fa-map-marker-alt { /*format icone map */
+    background-color: #f2f2f2;
+    padding: 17px 19px;
+    border-radius: 15px 0 0 15px;
+    font-size: 1.1em;
+}
+
+#enter_location { 
+    font-size: 1.1em;
+    font-weight: 800;
+    border: solid #f2f2f2 thin;
+    width: 100%; /* permet la réduction du champ de recherche en diminuant page*/
+    max-width: 230px;
+    height: 46px;
+    padding-left: 20px;
+}
+
+::placeholder { /* pseudo élement, met en forme "Marseille, France" pré-remplie dans le champ de recherche */
+    opacity: 1;
+    color: black;
+}
+
+#search_field button {
+    background-color: #0065fc;
+    height: 52px;
+    border: none;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+#button_mobile {
+    border-radius: 15px;
+    width: 52px;
+    flex-shrink: 0; /*empeche deformation de l'élément sur petites tailles écran*/
+}
+
+#button_desktop {
+    border-radius: 0 15px 15px 0;
+    width: 130px;
+}
+
+#button_desktop, #enter_location, .filter_title {
+    font-family: "Raleway", sans-serif;
+}
+
+/*----------------- SEARCH FILTERS global -----------------*/
+
+#buttons_filters {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#buttons_filters button {
+    background-color: white;
+    border: solid 2px #d9d9d9;
+    border-radius: 30px ;
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.filter_title {
+    font-size: 1.3em;
+    font-weight: 700;
+    padding-right: 7px;
+}
+
+#buttons_filters i { /*format et placement des icones font awesome par rapport à leur boutons*/
+    color: #0065fc;
+    background-color: #deebff ;
+    height: 45px;
+    width: 45px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: -10px;
+    font-size: 1.4em;
+}
+
+#buttons_filters button:hover {
+    background-color: #0065fc;
+    color: white;
+}
+
+/*----------------- SEARCH INFO global -----------------*/
+
+#search_info {
+    margin: 10px 0 30px 0;
+}
+
+#search_info i { 
+    color:#0065fc;
+    border:solid 1px #d9d9d9;
+    padding: 5px;
+    font-size: 0.7em;
+    border-radius: 30px;
+    margin: 10px;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    flex-shrink: 0; /*empêche déformation de l'élément sur petites tailles écran*/ 
+}
+
+#search_info p{
+    margin: 10px 0;
+}
+
+/*----------------- CONTAINER HOUSING global -----------------*/
+
+.stars {
+    color: #0065fc;
+    font-size: 0.7em;
+}
+
+.fa-star {
+    padding-right: 1px;
+}
+
+.stars .last {
+    color:#d9d9d9;
+}
+
+h4 {
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px #e4e4e4, 0 4px 12px #e4e4e4; /* ombre selon le Material design = combine ombre de lumière ambiante et lumière directe (key light)*/
+}
+
+#container_housing img{
+    padding: 5px;
+}
+
+#section_housing .card, #section_popular .card {
+    margin: 6px; 
+}
+
+/*----------------- POPULAR global -----------------*/
+
+#section_popular {
+    background-color:#f2f2f2; 
+    display: flex; 
+    flex-direction: column;
+}
+
+#popular_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.fa-chart-line {
+    font-weight: 800;
+    font-size: 1.5em;
+    color: black;
+    padding-top: 40px;
+}
+
+#popular_cards .card {
+    display: flex;
+    height: 145px;
+}
+
+#popular_cards img { 
+    width: 130px; 
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+}
+
+#popular_cards .hotel_details  {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#popular_cards h3, #popular_cards h4{
+    margin: 0;
+}
+
+#popular_cards h4 {
+    margin-top: -15px;
+}
+
+#popular_cards .stars {
+    padding-top: 15px;
+}
+
+/*----------------- HOUSING MARSEILLE global -----------------*/
+#section_housing h2{ 
+    margin: 25px 0;
+}
+#housing_cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #housing_cards img { 
+    height: 115px; 
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+#housing_cards .hotel_details  {
+    margin-left: 10px;
+    height: 75px;
+}
+
+#housing_cards h4, #housing_cards h3, #housing_cards .stars { 
+    margin: 5px;
+}
+
+
+/*----------------- ACTIVITIES global -----------------*/
+
+#section_activities {
+    padding-bottom: 50px;
+}
+
+#section_activities .card{
+    margin: 13px;
+}
+
+#section_activities h3 {
+    padding: 15px;
+    margin:0; 
+}
+
+#section_activities img {
+    border-radius: 15px 15px 0 0px;
+    height: 135px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media all and (max-width: 365px){ /*mobile petits formats pour que texte ne se chevauchent pas*/
+
+    #popular_cards .hotel_details  {
+        font-size: 0.8em;
+    }
+}
+
+@media all and (max-width:750px){ /* mobile */ 
+
+   #signUp, #section_search, #section_popular, #section_housing, #section_activities {
+        padding:  0 20px;
+    }
+    
+   #section_activities, #section_popular{
+    padding-bottom: 35px;
+   }
+
+   #subheading h1{
+       padding-top: 35px;
+   }
+    /*------------------- MOBILE SEARCH -------------------*/
+
+    #button_desktop {
+        display: none;
+    }
+
+    #buttons_filters button {
+        margin: 5px 10px 5px 0px;
+    }
+    
+    #search_info {
+        display: flex;
+        align-items: baseline;
+    }
+
+    #search_field {
+        margin: 35px 0 ;
+    }
+
+
+    /*------------------- MOBILE CONTAINER HOUSING-------------------*/
+
+    .card {
+        width: 100%;
+    }
+
+    #popular_cards, #housing_cards, #activities_cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #popular_cards img {
+        width: 40%;
+        flex-shrink: 0;
+    }
+
+    /*------------------- MOBILE ACTIVITIES FORMATS -------------------*/
+
+    #section_activities .card {
+        height: 190px;
+    }
+    
+    
+
+}
+
+@media all and (min-width: 750px) { /* Tablette et Desktop, élements qui ne varient pas sur tablette et desktop*/
+
+    /*------------------- TABLETTE + DESKTOP SEARCH -------------------*/
+        #button_mobile {
+            display: none;
+        }
+
+        #search_filters {
+            display: flex;
+            align-items:baseline;
+        }
+
+        #search_info {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+
+@media all and (min-width: 750px) and (max-width: 1390px) { /* tablette*/
+    
+
+    #section_search, #section_housing, #section_activities {
+        margin: 0px 30px 0 30px; 
+    }
+
+    #section_popular{
+        padding: 0 30px 30px 30px;
+    }
+
+    /*------------------- TABLETTE SEARCH -------------------*/
+
+    #buttons_filters button {
+        margin: 5px;
+    }
+    
+    #search_filters {
+        margin-top: 10px;
+    }
+
+
+    /*------------------- TABLETTE CONTAINER HOUSING -------------------*/
+
+    #popular_cards, #housing_cards, #activities_cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    #section_popular .card, #section_housing .card {
+        width: 330px;   
+    }
+   
+    /*------------------- TABLETTE ACTIVITIES FORMATS -------------------*/
+
+    #section_activities .card {
+        height: 190px;
+        width: 43%;
+    }
+    
+   
+}
+
+
+@media all and (min-width: 1390px) { /* desktop*/
+ 
+    /*------------------- DESKTOP SEARCH -------------------*/
+
+    #buttons_filters button {
+        margin: 15px;
+    }
+   
+    /*------------------- DESKTOP CONTAINER HOUSING -------------------*/
+
+    #container_housing { 
+        display: flex; 
+    }
+
+    #section_popular, #section_housing {
+        padding-bottom: 15px;
+    }
+
+    #section_housing .card, #section_popular .card {
+        margin: 15px; 
+    }
+
+    /*------------------- DESKTOP HOUSING MARSEILLE -------------------*/
+
+    #section_housing {
+        background-color: #f2f2f2;
+        border-radius: 15px;
+        margin-right: 2.9%;
+        width: 70%;
+    }
+
+    #housing_cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #section_housing .card {
+        width: 250px;
+    }
+
+    #section_housing h1, #section_housing h2 {
+        padding-left: 40px;
+    }
+
+    #section_housing h1 {
+        padding-bottom: 10px;
+    }
+
+    #container_housing > #section_housing {
+        order: -1;
+    }
+
+    /*------------------- DESKTOP POPULAR -------------------*/
+
+    #section_popular {
+        width: 32%;
+        border-radius: 15px;
+    }
+
+    #popular_cards{
+        display: flex;
+        flex-direction: column ;
+        align-items: center;
+    }
+
+    #section_popular .card { 
+        width: 345px;
+    }
+
+    #popular_title{
+        padding: 0 35px 10px 35px;
+    }
+
+    /*------------------- DESKTOP ACTIVITES FORMATS -------------------*/
+
+    #activities_cards .card {
+        width: 300px;
+        margin: 0;
+    }
+   
+    #activities_cards img{
+        border-radius: 15px 15px 0 0;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #vieux_port, #calanques {
+        height: 445px;
+    }
+
+    #vieux_port img, #calanques img {
+        height: 390px;  
+    }
+
+    #pomegues {
+        height: 235px; 
+    }
+
+    #pomegues img{
+        height: 180px;
+    }
+
+    #frioul {
+        height: 165px;
+    }
+
+    #frioul img{
+        height: 110px;
+    }
+
+    #notre_dame {
+        height:195px;
+    }
+
+    #notre_dame img{
+        height: 140px;
+    }
+
+    #longchamp {
+        height: 210px;
+    }
+
+    #longchamp img {
+        height: 155px;
+    }
+
+    /*------------------- DESKTOP GRID ACTIVITES -------------------*/
+
+    #activities_cards{
+       display: grid;
+       grid-template-columns: repeat(4, 300px);
+       grid-template-rows: repeat(2, 223px);
+       grid-template-areas: "a b d e" "a c d f";
+       grid-gap: 0 45px;
+   }
+    
+    #vieux_port{
+       grid-area : a;
+    }
+
+    #pomegues{
+       grid-area: b;  
+    }
+   
+    #frioul{
+       grid-area: c;
+       align-self: end;
+    }
+
+    #calanques {
+       grid-area: d; 
+    }
+
+    #notre_dame {
+       grid-area: e;  
+    }
+
+    #longchamp {
+       grid-area: f;
+       align-self: end;
+    }
+
+}

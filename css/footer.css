@@ -1,0 +1,27 @@
+footer {
+    background-color: #f2f2f2; 
+    padding: 30px 50px 20px 50px;
+}
+
+footer ul {
+    padding: 0; 
+    font-weight: 500;
+}
+
+footer h2 {
+    margin: 20px 0;
+} 
+
+footer li {
+    padding-bottom: 10px;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+footer div {
+    padding: 0 18% 0 0;
+}
