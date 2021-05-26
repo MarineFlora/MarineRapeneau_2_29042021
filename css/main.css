@@ -11,6 +11,7 @@
 #search_field {
     display: flex;
     align-items: center; 
+    margin: 20px 0 ;
 }
 
 .fa-map-marker-alt { /*format icone map */
@@ -25,6 +26,7 @@
     font-weight: 800;
     border: solid #f2f2f2 thin;
     width: 100%; /* permet la réduction du champ de recherche en diminuant page*/
+    max-width: 230px;
     height: 46px;
     padding-left: 20px;
 }
@@ -102,7 +104,7 @@
 /*----------------- SEARCH INFO global -----------------*/
 
 #search_info {
-    margin: 10px 0 20px 0;
+    margin: 10px 0 30px 0;
 }
 
 #search_info i { 
@@ -116,6 +118,10 @@
     height: 10px;
     text-align: center;
     flex-shrink: 0; /*empêche déformation de l'élément sur petites tailles écran*/ 
+}
+
+#search_info p{
+    margin: 10px 0;
 }
 
 /*----------------- CONTAINER HOUSING global -----------------*/
@@ -268,6 +274,10 @@ h4 {
    #section_activities, #section_popular{
     padding-bottom: 35px;
    }
+
+   #subheading h1{
+       padding-top: 35px;
+   }
     /*------------------- MOBILE SEARCH -------------------*/
 
     #button_desktop {
@@ -281,6 +291,10 @@ h4 {
     #search_info {
         display: flex;
         align-items: baseline;
+    }
+
+    #search_field {
+        margin: 35px 0 ;
     }
 
 
