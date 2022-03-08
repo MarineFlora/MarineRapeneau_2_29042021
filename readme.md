@@ -1,9 +1,14 @@
 # MarineRapeneau_2_28042021
-# Transform a mockup into a website
-Project 2 from OpenClassrooms's online course "web developer".
+# Transformez une maquette en site Web avec HTML & CSS
+Projet 2 formation Développeur Web d'OpenClassrooms
 
 ## General Info
-The task is to prototype the new design of the vacation planning website, Reservia. To integrate the responsive mockup (desktop, tablet, mobile) in HTML/CSS. <br/>
+But : créer le prototype du nouveau design du site de réservation de vacances Reservia, intégrer la maquette responsive (desktop, tablet, mobile) en HTML et CSS.
+
+Compétences développées :    
+➡ Implémenter une interface responsive   
+➡ Intégrer du contenu conformément à une maquette   
+
 Status : Finished
 
 ## Technologies
