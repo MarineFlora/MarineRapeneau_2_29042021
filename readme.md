@@ -17,3 +17,8 @@ https://marineflora.github.io/MarineRapeneau_2_29042021/
 ## Technologies
 * HTML5
 * CSS3
+
+## Maquettes Desktop & mobile fournies
+![Desktop - 1](https://user-images.githubusercontent.com/79592886/163200665-764b6aa7-1045-4570-b138-c068d0fd877c.png)
+![iPhone 8 - 1](https://user-images.githubusercontent.com/79592886/163200647-777ec0d8-df26-4a9b-a228-468a6ab1e70c.png)
+
